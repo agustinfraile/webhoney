@@ -246,6 +246,9 @@ footer {
     ===============================================================
 
 */
+.bodySobreMi {
+  height: 930px; }
+
 .sobreMiPresentacion {
   cursor: default;
   width: 100%;
