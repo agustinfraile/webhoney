@@ -1,0 +1,658 @@
+
+/*
+    ===============================================================
+    ====================== ESTILOS GENERALES ======================
+    ===============================================================
+
+*/
+
+@import "componentes/colors.scss";
+@import "componentes/effects.scss";
+@import "componentes/fonts.scss";
+@import "componentes/sizes.scss";
+
+
+
+
+// estilos para el header
+header {
+    width: $w-general;
+    height: $h-header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    // estilos para el logo
+    .logoContainer {
+        position: absolute;
+        height: 90px;
+        opacity: 1;
+        width: 100px;
+        margin-left: 15px;
+        transition: 0.5s;
+
+        .logoContainer__link {
+            background: url(/img/logo__final3.0.png);
+            width: $w-general;
+            height: $h-header;
+            background-repeat: no-repeat;
+            display: inline-block;
+            transition: 0.8s;
+        }
+    }
+
+    .logoContainer__link:hover {
+        background: url(/img/logo__final3.0_hover.png);
+        width: $w-general;
+        height: $h-header;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        transition: 0.2s;
+    }
+
+
+    // estilos para el menu
+    .menu {
+        display: inline-block;
+        margin-left: 78%;
+        margin-top: 20px;
+    }
+
+    .menu__lista {
+        list-style-type: $sacar-puntos;
+
+        .menu__lista--boton {
+            display: inline-block;
+
+            a {
+                color: black;
+                text-decoration: $sacar-subrayado;
+                display: block;
+                padding: 0.5em 1em;
+                transition: 0.4s;
+            }
+
+            // estilos hover de los botonos del menu
+            a:hover {
+                background-color: $color-header-texto-hover;
+                padding: 0.6rem 1.4rem;
+                border-radius: 3px;
+                transition: 0.6s;
+            }
+        }
+    }
+
+}
+
+
+// estilos para pie de pagina
+footer {
+    width: $w-general;
+    height: $h-footer;
+    // background-color: $color-footer;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 100px 0px;
+
+    .redSocial {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 140px;
+        text-align: $font-c;
+        background-image: url(/img/Icon/instagram.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 0.6s;
+
+        a {
+            display: block;
+            position: absolute;
+            width:  100px;
+            height: 145px;
+        }
+
+
+    }
+
+    .redSocial:hover {
+        background-image: url(/img/Icon/instagram-hover.png);
+        transform: rotate(720deg);
+        transition: 0.8s;
+    }
+
+}
+
+/*
+    ===============================================================
+    ======================== ESTILOS INDEX ========================
+    ===============================================================
+
+*/
+
+.bodyIndex {
+    background-image: url(/img/index/honey-inicio.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.indexPresentacion {
+    width: $w-general;
+    height: $h-index;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    
+    .indexPresentacion__titulo {
+        margin-top: 200px;
+        text-align: $font-c;
+        
+        h3 {
+            font-weight: $font-s;
+        }
+    }
+    
+    .indexPresentacion__seccionAbajo {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        border-width: 0 0 45vh 100vw;
+        border-style: solid;
+        border-color: transparent transparent #ffffff transparent;
+    }
+
+}
+
+
+
+.indexAcercaDe {
+    width: $w-general;
+    height: 500px;
+    margin-top: 0;
+
+    .indexAcercaDe__sub {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: $font-c;
+
+        h3 {
+            font-weight: $font-s;
+            margin-bottom: 20px;
+            margin-top: 200px;
+            
+        }
+
+        p {
+            font-weight: $font-s;
+
+        }
+    }
+}
+
+
+
+
+.indexGaleria {
+    width: $w-general;
+    height: $h-index;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+
+
+    .indexGaleria__seccionArriba {
+        z-index: 10;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        border-width: 35vh 100vw 0 0;
+        border-style: solid;
+        border-color: #ffffff transparent transparent transparent;
+    }
+
+    .indexGaleria__img {
+        width: 20%;
+        height: $h-index;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+        .indexGaleria__img img {
+            width: $w-general;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .indexGaleria__seccionAbajo {
+        z-index: 10;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        border-width: 0 0 0vh 100vw;
+        border-style: solid;
+        border-color: transparent transparent #ffffff transparent;
+    }
+}
+
+
+/*
+    ===============================================================
+    ====================== ESTILOS SOBRE MI =======================
+    ===============================================================
+
+*/
+
+.sobreMiPresentacion {
+    cursor: default;
+    width: $w-general;
+    height: $h-sobre_mi;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 150px 0px;
+
+    .sobreMiPresentacion__titulo {
+        width: $w-general/2;
+        height: $h-titulos;
+        background-color: #eee4cc2a;
+        margin: 0 auto;
+        text-align: $font-c;
+        padding: 60px 0px;
+
+        h3 {
+            font-weight: $font-s;
+        }
+    }
+
+
+    .sobreMiPresentacion__seccionAbajo {
+        width: $w-general;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        border-width: 0 0 35vh 99vw;
+        border-style: solid;
+        border-color: transparent transparent #ffffff transparent;
+    }
+}
+
+.sobreMiContainer {
+    width: $w-general;
+    height: $h-sobre_mi;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: center;
+    padding: 140px 0px;
+    justify-content: space-evenly;
+
+    .sobreMiContainer__box {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        box-shadow: 5px 5px 20px #000000;
+
+
+        .sobreMiContainer__box--anio {
+            width: $w-general;
+            height: $h-general;
+            padding: 0px;
+
+            .sobreMiContainer__box--2019 {
+                background-image: url(/./img/mis_dias/Honey-2019.png);
+            }
+
+            .sobreMiContainer__box--2020 {
+                background-image: url(/./img/mis_dias/Honey-2020.png);
+            }
+
+            .sobreMiContainer__box--2021 {
+                background-image: url(/./img/mis_dias/Honey-2021.png);
+            }
+
+            a {
+                width: $w-general;
+                height: $h-general;
+                display: flex;
+                padding: 140px 0;
+                text-decoration: $sacar-subrayado;
+                transition: 0.8s;
+                opacity: 0.5;
+
+
+                p {
+                    padding: 30px;
+                    width: $w-general;
+                    height: 100px;
+                    text-align: $font-c;
+                    font-weight: $font-b;
+                    opacity: 0;
+                    transition: 0.5s;
+                }
+
+            }
+
+            a:hover {
+                opacity: 1;
+                transition: 0.9s;
+
+                p {
+                    opacity: 1;
+                    transition: 0.8s;
+                }
+            }
+        }
+    }
+}
+
+/*
+    ===============================================================
+    ======================== ESTILOS 2019 =========================
+    ===============================================================
+
+*/
+
+.sobreMiPresentacionNew {
+    width: $w-general;
+    height: 300px;
+    padding: 5% 0;
+    background-color: #f1e2bc;
+    transition: 2s;
+
+    .sobreMiPresentacionNew__box {
+        text-align: $font-c;
+    }
+}
+
+
+.sobreMiContainerNew {
+    width: $w-general;
+    height: 300px;
+    display: flex;
+    margin: 50px auto;
+
+    .sobreMiContainerNew__box {
+        width: $w-general/2;
+        height: 300px;
+        margin-left: 50px;
+
+        p {
+            text-align: $font-c;
+            margin-top: 15%;
+            animation: transitionmenosX 2s;
+        }
+
+        .parrafoNew2019 {
+            animation: transitionmenosX 2s;
+            text-align: $font-c;
+            margin-top: 11%;
+        }
+    }
+
+    picture {
+        margin-left: 100px;
+        
+        img {
+            border-radius: 140px;
+            animation: transitionX 2s;
+        }
+    }
+    
+}
+
+
+// Efectos de movimiento para las imagenes y los textos al recargar la pagina
+@keyframes transitionX {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes transitionmenosX {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+/*
+    ===============================================================
+    ======================= ESTILOS GALERIA =======================
+    ===============================================================
+
+*/
+
+.galeriaPresentacion {
+    cursor: default;
+    width: $w-general;
+    height: $h-sobre_mi;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 150px 0px;
+
+    .galeriaPresentacion__titulo {
+        width: $w-general/2;
+        height: $h-titulos;
+        background-color: #eee4cc2a;
+        margin: 0 auto;
+        text-align: $font-c;
+        padding: 60px 0px;
+    
+        h3 {
+            font-weight: $font-s;
+        }
+    
+    }
+
+    .galeriaPresentacion__seccionAbajo {
+        width: $w-general;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        border-width: 0 0 35vh 99vw;
+        border-style: solid;
+        border-color: transparent transparent #ffffff transparent;
+    }
+}
+
+.galeriaImagenes {
+    padding: 10px 300px;
+    margin: 0 auto;
+    width: $w-general;
+    height: $h-galeria;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+    .galeriaImagenes__container {
+        background-color: #a39983;
+        width: 600px;
+        height: 600px;
+        margin: 20px 15px;
+    }
+
+    .galeriaImagenes__container--foto1 {
+        background-image: url(/img/galeria/foto1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .galeriaImagenes__container--foto2 {
+        background-image: url(/img/galeria/foto2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .galeriaImagenes__container--foto3 {
+        background-image: url(/img/galeria/foto3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .galeriaImagenes__container--foto4 {
+        background-image: url(/img/galeria/foto4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .galeriaImagenes__container--foto5 {
+        background-image: url(/img/galeria/foto5.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .galeriaImagenes__container--foto6 {
+        background-image: url(/img/galeria/foto6.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .galeriaImagenes__container--foto7 {
+        background-image: url(/img/galeria/foto7.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .galeriaImagenes__container--foto8 {
+        background-image: url(/img/galeria/foto8.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .galeriaImagenes__container--foto9 {
+        background-image: url(/img/galeria/foto9.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .galeriaImagenes__container--foto10 {
+        background-image: url(/img/galeria/foto1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/*
+    ===============================================================
+    ====================== ESTILOS CONTACTO =======================
+    ===============================================================
+
+*/
+
+.contactoPresentacion {
+    cursor: default;
+    width: $w-general;
+    height: $h-sobre_mi;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 150px 0px;
+
+    .contactoPresentacion__titulo {
+        width: $w-general /2;
+        height: $h-titulos;
+        background-color: #eee4cc2a;
+        margin: 0 auto;
+        text-align: $font-c;
+        padding: 60px 0px;
+    
+        h3 {
+            font-weight: $font-s;
+        }
+    }                   
+
+    .contactoPresentacion__seccionAbajo {
+        width: $w-general;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        border-width: 0 0 35vh 99.14vw;
+        border-style: solid;
+        border-color: transparent transparent #ffffff transparent;
+    }
+}
+
+.contactar {
+    width: $w-general;
+    height: $h-contacto;
+    padding: 150px 0px;
+    display: flex;
+    
+    .contactar__form {
+        box-shadow: 3px 3px 15px #000000;
+        border-radius: 100px;
+        background-color: #b9b09d0c;
+        border: 1px solid #000000;
+        display: inline-block;
+        width: 70%;
+        height: 600px;
+        margin: 0 auto;
+        padding: 80px 500px;
+
+        input {
+            width: 300px;
+            height: 40px;
+            margin-bottom: 20px;
+        }
+
+        select {
+            width: 300px;
+            height: 40px;
+            margin-bottom: 20px;
+        }        
+
+        option {
+            width: 300px;
+            height: 40px;
+        }
+
+        textarea {
+            width: 500px;
+            margin-left: -100px;
+        }
+
+        .btn-form {
+            width: 200px;
+            height: 35px;
+            margin-left: 55px;
+            margin-top: 10px;
+            padding: 5px 0;
+            border-radius: 15px;
+            transition: 0.2s;
+        }
+
+        .btn-form:hover {
+            opacity: 0.5;
+            transition: 0.2s;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+$color-header-texto-hover: #e0c990ad;
+
+$color-texto-botones: #000000;
+
+
+// lista de los colores
+$colores: (fondo: #ffffff, header:#55555585, header-texto: #fffdfdb6,  footer: #000000, parrafo: #000000af, secciones:#f1e9d3, sobre-mi:#ffffff5b, subtitulo-sobre_mi: #0000008e);
+
+$colores-letras: (botones: #000000, titulo: #ffffff, subtitulo: #ffffff, secciones:#f1e9d3, sobre-mi:#000000, parrafo: #ffffff);
+
+// each para crear clases de todos los colores a utilizar, donde 'n' representa el nombre y 'c' el color
+@each $n, $c in $colores {
+    .bg-#{$n}{
+        background-color: $c;
+    }
+}
+
+
+// each para crear las clases de todos los colores de las letras a utilizar, donde 't' representa el nmbre y'f' los colores
+@each $t, $f in $colores-letras {
+    .color-#{$t} {
+        color: $f;
+    }
+}

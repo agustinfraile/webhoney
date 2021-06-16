@@ -1,0 +1,17 @@
+$fuente-principal: 'Fjalla One',
+sans-serif;
+
+$font-s: 300;
+$font-b: bold;
+$font-c: center;
+
+// lista de los tamaños de las fuentes
+$tamanio-fuentes: (titulo: 6em, subtitulo: 3.4em, parrafo: 1.8em );
+
+// each para crear clases de todos las fuentes a utilizar, donde 'n' representa el nombre y 'f' el tamaño de la fuente
+@each $n, $f in $tamanio-fuentes {
+    .font-s-#{$n} {
+        font-size: $f;
+    }
+}
+

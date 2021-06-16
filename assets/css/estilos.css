@@ -1,0 +1,739 @@
+* {
+    font-size: "Fjalla One", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+  
+  /* .body {
+    background-color: #f3eddd; 
+  } */
+
+
+    
+/*  
+    ==========================================================
+    =============== INICIO DE LAS MEDIAQUERIES =============== 
+    ==========================================================
+*/
+
+/* Breakpoint 1300px */
+
+@media (max-width:1300px) and (min-width: 990px) {
+     /* Menu de navegacion */
+        header .menu {
+          margin-left: 70%;}
+       
+    /*  Index */
+          .indexPresentacion .indexPresentacion__titulo h1 {
+            font-size: 5.6em; }
+          .indexPresentacion .indexPresentacion__titulo h3 {
+            font-size: 3.2em; }
+
+      .indexAcercaDe {
+        width: 100%;
+        height: 500px;
+        background: #ffffff;
+        margin-top: 0; }
+          .indexAcercaDe .indexAcercaDe__sub h3 {
+            font-size: 3.2em; }
+          .indexAcercaDe .indexAcercaDe__sub p {
+            font-size: 1.6em; }
+      
+      .indexGaleria {
+        width: 100%;
+        height: 850px;
+        overflow: hidden;
+        display: flex;
+        position: relative; }
+        .indexGaleria .indexGaleria__seccionArriba {
+          z-index: 10;
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          border-width: 35vh 100vw 0 0;
+          border-style: solid;
+          border-color: #ffffff transparent transparent transparent; }
+        .indexGaleria .indexGaleria__img {
+          width: 20%;
+          height: 850px;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          flex-wrap: wrap; }
+          .indexGaleria .indexGaleria__img .indexGaleria__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .indexGaleria .indexGaleria__seccionAbajo {
+          z-index: 10;
+          position: absolute;
+          bottom: 0%;
+          left: 0%;
+          border-width: 0 0 0vh 100vw;
+          border-style: solid;
+          border-color: transparent transparent #ffffff transparent; }
+
+    /*  Sobre mi */
+      
+          .sobreMiPresentacion .sobreMiPresentacion__titulo h1 {
+            font-size: 5.8em; }
+          .sobreMiPresentacion .sobreMiPresentacion__titulo h3 {
+            color: #0000008e;
+            font-size: 3.2em; }
+      
+      .sobreMiContainer {
+        width: 100%;
+        height: 1200px; }
+
+
+    /* Galeria */
+        .galeriaPresentacion .galeriaPresentacion__titulo h1 {
+                font-size: 5.8em; }
+        .galeriaPresentacion .galeriaPresentacion__titulo h3 {
+                color: #0000008e;
+                font-size: 3.2em; }
+          
+          .galeriaImagenes {
+            background-color: #ffffff;
+            padding: 10px 250px;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 1fr); }
+
+    /* Contacto */
+          .contactoPresentacion .contactoPresentacion__titulo h1 {
+            font-size: 5.8em; }
+          .contactoPresentacion .contactoPresentacion__titulo h3 {
+            color: #0000008e;
+            font-size: 3.2em; }
+      
+
+        .contactar .contactar__form {
+          box-shadow: 3px 3px 15px #000000;
+          border-radius: 100px;
+          background-color: #b9b09d0c;
+          border: 1px solid #000000;
+          display: inline-block;
+          width: 70%;
+          height: 600px;
+          margin: 0 auto;
+          padding: 40px 400px; }
+          .contactar .contactar__form input {
+            width: 300px;
+            height: 40px;
+            margin-left: -170px; }
+          .contactar .contactar__form select {
+            width: 300px;
+            height: 40px;
+            margin-bottom: 20px;
+            margin-left: -170px; }
+          .contactar .contactar__form option {
+            width: 300px;
+            height: 40px;
+            margin-left: -100px; }
+          .contactar .contactar__form textarea {
+            width: 500px;
+            margin-left: -250px; }
+          .contactar .contactar__form .btn-form {
+            width: 200px;
+            height: 35px;
+            margin-left: -100px;
+            margin-top: 10px;
+            padding: 5px 0;
+            border-radius: 15px;
+            transition: 0.2s; }
+          .contactar .contactar__form .btn-form:hover {
+            opacity: 0.5;
+            transition: 0.2s; }
+}
+
+/* Breakpoint 720px  */
+@media (max-width:990px) and (min-width: 720px) {
+    
+    /*  Menu de navegacion */
+    header .menu {
+        margin-left: 60%;}
+     
+  /*  Index */
+        .indexPresentacion .indexPresentacion__titulo h1 {
+          font-size: 5.2em; }
+        .indexPresentacion .indexPresentacion__titulo h3 {
+          font-size: 2.8em; }
+
+    
+  /*  Sobre mi */
+    
+        .sobreMiPresentacion .sobreMiPresentacion__titulo h1 {
+          font-size: 5.2em; }
+        .sobreMiPresentacion .sobreMiPresentacion__titulo h3 {
+          color: #0000008e;
+          font-size: 2.8em; }
+    
+    .sobreMiContainer {
+      width: 100%;
+      height: 1450px; }
+
+      .sobreMiContainer__box {
+          margin-top: 25px;
+      }
+
+
+  /* Galeria */
+      .galeriaPresentacion .galeriaPresentacion__titulo h1 {
+              font-size: 5.2em; }
+      .galeriaPresentacion .galeriaPresentacion__titulo h3 {
+              color: #0000008e;
+              font-size: 2.8em; }
+        
+        .galeriaImagenes {
+          background-color: #ffffff;
+          padding: 10px 200px;
+          margin: 0 auto;
+          width: 100%;
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(1, 1fr); }
+
+          .galeriaImagenes .galeriaImagenes__container {
+            background-color: #a39983;
+            width: 450px;
+            height: 450px;
+            margin: 20px 15px; }
+          
+
+  /*  Contacto */
+        .contactoPresentacion .contactoPresentacion__titulo h1 {
+          font-size: 5.2em; }
+        .contactoPresentacion .contactoPresentacion__titulo h3 {
+          color: #0000008e;
+          font-size: 2.8em; }
+    
+
+      .contactar .contactar__form {
+        box-shadow: 3px 3px 15px #000000;
+        border-radius: 100px;
+        background-color: #b9b09d0c;
+        border: 1px solid #000000;
+        display: inline-block;
+        width: 70%;
+        height: 600px;
+        margin: 0 auto;
+        padding: 40px 300px; }
+        .contactar .contactar__form input {
+          width: 300px;
+          height: 40px;
+          margin-left: -170px; }
+        .contactar .contactar__form select {
+          width: 300px;
+          height: 40px;
+          margin-bottom: 20px;
+          margin-left: -170px; }
+        .contactar .contactar__form option {
+          width: 300px;
+          height: 40px;
+          margin-left: -100px; }
+        .contactar .contactar__form textarea {
+          width: 500px;
+          margin-left: -250px; }
+        .contactar .contactar__form .btn-form {
+          width: 200px;
+          height: 35px;
+          margin-left: -100px;
+          margin-top: 10px;
+          padding: 5px 0;
+          border-radius: 15px;
+          transition: 0.2s; }
+        .contactar .contactar__form .btn-form:hover {
+          opacity: 0.5;
+          transition: 0.2s; }
+}
+
+ /* Breakpoint 480 */
+@media (max-width:720px) and (min-width: 480px) {
+    
+    header {
+        width: 100%;
+        height: auto;
+        background-color: #55555585;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        header .logoContainer {
+          position: relative;
+          height: auto;
+          opacity: 1;
+          width: 100px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          margin-left: auto;
+          margin-right: auto;
+          transition: 0.5s; }
+          header .logoContainer .logoContainer__link--image {
+            width: 100%;
+            height: auto; }
+        header .logoContainer__link:hover {
+          opacity: 0.6;
+          transition: 1s; }
+        header .menu {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          margin-left: 0%;
+          margin-top: 20px; }
+        header .menu__lista {
+          list-style-type: none; }
+          header .menu__lista .menu__lista--boton {
+            display: flex; 
+            justify-content: center;}
+            header .menu__lista .menu__lista--boton a {
+              text-decoration: none;
+              color: #ffffffc0;
+              display: block;
+              padding: 0.5em 1em;
+              transition: 0.4s; }
+            header .menu__lista .menu__lista--boton a:hover {
+              background-color: #e0c990ad;
+              padding: 0.6rem 1.4rem;
+              border-radius: 3px;
+              transition: 0.6s; }
+     
+   /* Index */
+        .indexPresentacion .indexPresentacion__titulo h1 {
+          font-size: 4em; }
+        .indexPresentacion .indexPresentacion__titulo h3 {
+          font-size: 2em; }
+
+    
+   /* Sobre mi */
+    
+        .sobreMiPresentacion .sobreMiPresentacion__titulo h1 {
+          font-size: 3.6em; }
+        .sobreMiPresentacion .sobreMiPresentacion__titulo h3 {
+          color: #0000008e;
+          font-size: 2em; }
+    
+    .sobreMiContainer {
+      width: 100%;
+      height: 1500px; }
+
+      .sobreMiContainer__box {
+          margin-top: 25px;
+      }
+
+
+ /* Galeria */
+      .galeriaPresentacion .galeriaPresentacion__titulo h1 {
+              font-size: 3.6em; }
+      .galeriaPresentacion .galeriaPresentacion__titulo h3 {
+              color: #0000008e;
+              font-size: 2em; }
+        
+        .galeriaImagenes {
+          background-color: #ffffff;
+          padding: 10px 50px;
+          margin: 0 auto;
+          width: 100%;
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(1, 1fr); }
+
+          .galeriaImagenes .galeriaImagenes__container {
+            background-color: #a39983;
+            width: 350px;
+            height: 350px;
+            margin: 20px 15px; }
+          
+
+   /* Contacto */
+        .contactoPresentacion .contactoPresentacion__titulo h1 {
+          font-size: 3.6em; }
+        .contactoPresentacion .contactoPresentacion__titulo h3 {
+          color: #0000008e;
+          font-size: 2em; }
+    
+
+      .contactar .contactar__form {
+        box-shadow: 3px 3px 15px #000000;
+        border-radius: 100px;
+        background-color: #b9b09d0c;
+        border: 1px solid #000000;
+        display: inline-block;
+        width: 70%;
+        height: 600px;
+        margin: 0 auto;
+        padding: 40px 200px; }
+        .contactar .contactar__form input {
+          width: 300px;
+          height: 40px;
+          margin-left: -170px; }
+        .contactar .contactar__form select {
+          width: 300px;
+          height: 40px;
+          margin-bottom: 20px;
+          margin-left: -170px; }
+        .contactar .contactar__form option {
+          width: 300px;
+          height: 40px;
+          margin-left: -100px; }
+        .contactar .contactar__form textarea {
+          width: 300px;
+          margin-left: -150px; }
+        .contactar .contactar__form .btn-form {
+          width: 200px;
+          height: 35px;
+          margin-left: -100px;
+          margin-top: 10px;
+          padding: 5px 0;
+          border-radius: 15px;
+          transition: 0.2s; }
+        .contactar .contactar__form .btn-form:hover {
+          opacity: 0.5;
+          transition: 0.2s; }
+}
+
+
+ /* Breakpoint 320px */
+@media (max-width:480px) and (min-width: 320px) {
+    
+    header {
+        width: 100%;
+        height: auto;
+        background-color: #55555585;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        header .logoContainer {
+          position: relative;
+          height: auto;
+          opacity: 1;
+          width: 100px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          margin-left: auto;
+          margin-right: auto;
+          transition: 0.5s; }
+          header .logoContainer .logoContainer__link--image {
+            width: 100%;
+            height: auto; }
+        header .logoContainer__link:hover {
+          opacity: 0.6;
+          transition: 1s; }
+        header .menu {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          margin-left: 0%;
+          margin-top: 20px; }
+        header .menu__lista {
+          list-style-type: none; }
+          header .menu__lista .menu__lista--boton {
+            display: flex; 
+            justify-content: center;}
+            header .menu__lista .menu__lista--boton a {
+              text-decoration: none;
+              color: #ffffffc0;
+              display: block;
+              padding: 0.5em 1em;
+              transition: 0.4s; }
+            header .menu__lista .menu__lista--boton a:hover {
+              background-color: #e0c990ad;
+              padding: 0.6rem 1.4rem;
+              border-radius: 3px;
+              transition: 0.6s; }
+     
+   /* Index */
+        .indexPresentacion .indexPresentacion__titulo h1 {
+          font-size: 3.6em; }
+        .indexPresentacion .indexPresentacion__titulo h3 {
+          font-size: 1.8em; }
+
+    
+   /* Sobre mi */
+    
+        .sobreMiPresentacion .sobreMiPresentacion__titulo h1 {
+          font-size: 2.8em; }
+        .sobreMiPresentacion .sobreMiPresentacion__titulo h3 {
+          color: #0000008e;
+          font-size: 1.6em; }
+    
+    .sobreMiContainer {
+      width: 100%;
+      height: 1600px; }
+
+      .sobreMiContainer__box {
+          display: flex;
+          width: 300px;
+          height: 300px;
+          margin-top: 25px;
+      }
+      .sobreMiContainer__box--anio {
+          width: 300px;
+          height: 300px;
+      }
+
+      .sobreMiContainer__box--anio a {
+        width: 300px;
+        height: 300px;
+      }
+
+      .sobreMiContainer__box--anio a p {
+          width: 300px;
+          height: 300px;
+      }
+
+
+   /* Galeria */
+      .galeriaPresentacion .galeriaPresentacion__titulo h1 {
+              font-size: 2.8em; }
+      .galeriaPresentacion .galeriaPresentacion__titulo h3 {
+              color: #0000008e;
+              font-size: 1.6em; }
+        
+        .galeriaImagenes {
+          background-color: #ffffff;
+          padding: 10px 20px;
+          margin: 0 auto;
+          width: 100%;
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(1, 1fr); }
+
+          .galeriaImagenes .galeriaImagenes__container {
+            background-color: #a39983;
+            width: 290px;
+            height: 290px;
+            margin: 20px 15px; }
+          
+
+   /* Contacto */
+        .contactoPresentacion .contactoPresentacion__titulo h1 {
+          font-size: 2.8em; }
+        .contactoPresentacion .contactoPresentacion__titulo h3 {
+          color: #0000008e;
+          font-size: 1.6em; }
+    
+
+      .contactar .contactar__form {
+        box-shadow: 3px 3px 15px #000000;
+        border-radius: 100px;
+        background-color: #b9b09d0c;
+        border: 1px solid #000000;
+        display: inline-block;
+        width: 70%;
+        height: 650px;
+        margin: 0 auto;
+        padding: 40px 150px; }
+        .contactar .contactar__form input {
+          width: 200px;
+          height: 50px;
+          margin-left: -100px; }
+        .contactar .contactar__form select {
+            width: 200px;
+            height: 50px;
+            margin-left: -100px;
+          margin-bottom: 20px; }
+        .contactar .contactar__form option {
+            width: 200px;
+            height: 50px;
+          margin-left: -100px; }
+        .contactar .contactar__form textarea {
+          width: 200px;
+          margin-left: -100px; }
+        .contactar .contactar__form .btn-form {
+          width: 200px;
+          height: 35px;
+          margin-left: -100px;
+          margin-top: 10px;
+          padding: 5px 0;
+          border-radius: 15px;
+          transition: 0.2s; }
+        .contactar .contactar__form .btn-form:hover {
+          opacity: 0.5;
+          transition: 0.2s; }
+}
+
+ /* Breakpoint menores que 320px */
+@media (max-width:320px) {
+    
+    header {
+        width: 100%;
+        height: auto;
+        background-color: #55555585;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        header .logoContainer {
+          position: relative;
+          height: auto;
+          opacity: 1;
+          width: 100px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          margin-left: auto;
+          margin-right: auto;
+          transition: 0.5s; }
+          header .logoContainer .logoContainer__link--image {
+            width: 100%;
+            height: auto; }
+        header .logoContainer__link:hover {
+          opacity: 0.6;
+          transition: 1s; }
+        header .menu {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          margin-left: 0%;
+          margin-top: 20px; }
+        header .menu__lista {
+          list-style-type: none; }
+          header .menu__lista .menu__lista--boton {
+            display: flex; 
+            justify-content: center;}
+            header .menu__lista .menu__lista--boton a {
+              text-decoration: none;
+              color: #ffffffc0;
+              display: block;
+              padding: 0.5em 1em;
+              transition: 0.4s; }
+            header .menu__lista .menu__lista--boton a:hover {
+              background-color: #e0c990ad;
+              padding: 0.6rem 1.4rem;
+              border-radius: 3px;
+              transition: 0.6s; }
+     
+   /* Index */
+        .indexPresentacion .indexPresentacion__titulo h1 {
+          font-size: 3em; }
+        .indexPresentacion .indexPresentacion__titulo h3 {
+          font-size: 1.5em; }
+
+    
+   /* Sobre mi */
+    
+        .sobreMiPresentacion .sobreMiPresentacion__titulo h1 {
+          font-size: 2em; }
+        .sobreMiPresentacion .sobreMiPresentacion__titulo h3 {
+          color: #0000008e;
+          font-size: 1.4em; }
+    
+    .sobreMiContainer {
+      width: 100%;
+      height: auto; }
+
+      .sobreMiContainer__box {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          width: 80%;
+          height: 80%;
+          margin-top: 25px;
+      }
+      .sobreMiContainer__box--anio {
+          width: 80%;
+          height: 80%;
+      }
+
+      .sobreMiContainer__box--anio a {
+        width: 80%;
+        height: 80%;
+      }
+
+      .sobreMiContainer__box--anio a p {
+        width: 80%;
+        height: 80%;
+      }
+
+
+
+
+   /* Galeria */
+      .galeriaPresentacion .galeriaPresentacion__titulo h1 {
+              font-size: 2em; }
+      .galeriaPresentacion .galeriaPresentacion__titulo h3 {
+              color: #0000008e;
+              font-size: 1.4em; }
+        
+        .galeriaImagenes {
+          background-color: #ffffff;
+          padding: 10px 10px;
+          margin: 0 auto;
+          width: 100%;
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(1, 1fr); }
+
+          .galeriaImagenes .galeriaImagenes__container {
+            background-color: #a39983;
+            width: 90%;
+            height: 300px;
+            margin: 20px 15px; }
+          
+
+   /* Contacto */
+        .contactoPresentacion .contactoPresentacion__titulo h1 {
+          font-size: 2em; }
+        .contactoPresentacion .contactoPresentacion__titulo h3 {
+          color: #0000008e;
+          font-size: 1.4em; }
+    
+
+      .contactar .contactar__form {
+        box-shadow: 3px 3px 15px #000000;
+        border-radius: 100px;
+        background-color: #b9b09d0c;
+        border: 1px solid #000000;
+        display: inline-block;
+        width: 70%;
+        height: 650px;
+        margin: 0 auto;
+        padding: 40px 10px; }
+        .contactar .contactar__form input {
+          width: 80%;
+          height: 50px;
+          margin-left: 10px; }
+        .contactar .contactar__form select {
+            width: 80%;
+            height: 50px;
+            margin-left: 10px;
+          margin-bottom: 20px; }
+        .contactar .contactar__form option {
+            width: 80%;
+            height: 50px;
+            margin-left: 10px; }
+        .contactar .contactar__form textarea {
+          width: 80%;
+          margin-left: 10px; }
+        .contactar .contactar__form .btn-form {
+          width: 651%;
+          height: 35px;
+          margin-left: 20px;
+          margin-top: 10px;
+          padding: 5px 0;
+          border-radius: 15px;
+          transition: 0.2s; }
+        .contactar .contactar__form .btn-form:hover {
+          opacity: 0.5;
+          transition: 0.2s; }
+}
+
+  

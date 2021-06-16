@@ -1,0 +1,21 @@
+Seo en mi página:
+
+//INDEX
+-Titulo: para la etiqueta tittle agregue el nombre del inicio de mi sitio y en que seccion se encuentra.
+-Palabras Claves: Con la etiqueta meta hice una breve descripcion de mi pagina web ("Esta es una pagina para las personas que les encanta los animales, en especial los perros"). Para las keywords utilice lo siguiente ("Perros, animales, historias, autobiografia"). Para autor, puse mi nombre y mi apellido.
+-Encabezado: En esta seccion, el encabezado es "¡Hola, soy Honey!".
+
+//SOBRE MI
+-Titulo: para la etiqueta tittle agregue el nombre de mi sitio y en que seccion se encuentra.
+-Palabras Claves: Con la etiqueta meta hice una breve descripcion de mi pagina web ("Aquí encontrarás todo lo que tienes que saber sobre como fue creciendo Honey."). Para las keywords utilice lo siguiente ("Perros, animales, historias, autobiografia, crecer, cachorro"). Para autor, puse mi nombre y mi apellido.
+-Encabezado: En esta seccion, el encabezado es "Sobre Mí".
+
+//GALERIA
+-Titulo: para la etiqueta tittle agregue el nombre de mi sitio y en que seccion se encuentra.
+-Palabras Claves: Con la etiqueta meta hice una breve descripcion de mi pagina web ("Todas las fotos de distintos momentos de la vida de Honey."). Para las keywords utilice lo siguiente ("Perros, animales, crecer, cachorro, fotos, galeria"). Para autor, puse mi nombre y mi apellido.
+-Encabezado: En esta seccion, el encabezado es "Galería".
+
+//CONTACTO
+-Titulo: para la etiqueta tittle agregue el nombre de mi sitio y en que seccion se encuentra.
+-Palabras Claves: Con la etiqueta meta hice una breve descripcion de mi pagina web ("Contactanos para cualquier duda o sugerencia que tengas sobre Honeyweb"). Para las keywords utilice lo siguiente ("Perros, animales, crecer, cachorro, contactar, contacto, mail"). Para autor, puse mi nombre y mi apellido.
+-Encabezado: En esta seccion, el encabezado es "Contacto".
