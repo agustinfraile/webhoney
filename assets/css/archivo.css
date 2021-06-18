@@ -330,8 +330,8 @@ footer {
 */
 .sobreMiPresentacionNew {
   width: 100%;
-  height: 300px;
-  padding: 5% 0;
+  height: 500px;
+  padding: 8% 0;
   background-color: #f1e2bc;
   transition: 2s; }
   .sobreMiPresentacionNew .sobreMiPresentacionNew__box {
@@ -348,8 +348,11 @@ footer {
     margin-left: 50px; }
     .sobreMiContainerNew .sobreMiContainerNew__box p {
       text-align: center;
-      margin-top: 15%;
+      margin-top: 15%; }
+    .sobreMiContainerNew .sobreMiContainerNew__box .p_Izquierda {
       animation: transitionmenosX 2s; }
+    .sobreMiContainerNew .sobreMiContainerNew__box .p_Derecha {
+      animation: transition-menosX 2s; }
     .sobreMiContainerNew .sobreMiContainerNew__box .parrafoNew2019 {
       animation: transitionmenosX 2s;
       text-align: center;
@@ -358,7 +361,11 @@ footer {
     margin-left: 100px; }
     .sobreMiContainerNew picture img {
       border-radius: 140px;
+      box-shadow: 3px 3px 10px 4px; }
+    .sobreMiContainerNew picture .i_Derecha {
       animation: transitionX 2s; }
+    .sobreMiContainerNew picture .i_Izquierda {
+      animation: transition-X 2s; }
 
 @keyframes transitionX {
   from {
@@ -368,10 +375,26 @@ footer {
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes transition-X {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
 @keyframes transitionmenosX {
   from {
     opacity: 0;
     transform: translateX(-100px); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes transition-menosX {
+  from {
+    opacity: 0;
+    transform: translateX(100px); }
   to {
     opacity: 1;
     transform: translateX(0); } }
