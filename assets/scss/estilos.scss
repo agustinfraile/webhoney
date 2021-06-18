@@ -369,8 +369,8 @@ footer {
 
 .sobreMiPresentacionNew {
     width: $w-general;
-    height: 300px;
-    padding: 5% 0;
+    height: 500px;
+    padding: 8% 0;
     background-color: #f1e2bc;
     transition: 2s;
 
@@ -394,7 +394,14 @@ footer {
         p {
             text-align: $font-c;
             margin-top: 15%;
+        }
+
+        .p_Izquierda {
             animation: transitionmenosX 2s;
+        }
+
+        .p_Derecha {
+            animation: transition-menosX 2s;
         }
 
         .parrafoNew2019 {
@@ -409,7 +416,15 @@ footer {
         
         img {
             border-radius: 140px;
+            box-shadow: 3px 3px 10px 4px;
+        }
+
+        .i_Derecha{
             animation: transitionX 2s;
+        }
+
+        .i_Izquierda {
+            animation: transition-X 2s;
         }
     }
     
@@ -421,6 +436,18 @@ footer {
     from {
         opacity: 0;
         transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes transition-X {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
     }
 
     to {
@@ -441,6 +468,17 @@ footer {
     }
 }
 
+@keyframes transition-menosX {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 
 
