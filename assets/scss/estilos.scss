@@ -572,14 +572,20 @@ footer {
 
 */
 
+
+.bodyContacto {
+    width: $w-general;
+    height: $h-contacto-principal;
+
+
 .contactoPresentacion {
     cursor: default;
     width: $w-general;
-    height: $h-sobre_mi;
+    height: $h-contacto-sec;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    padding: 150px 0px;
+    padding: 130px 0px;
 
     .contactoPresentacion__titulo {
         width: $w-general /2;
@@ -587,7 +593,7 @@ footer {
         background-color: #eee4cc2a;
         margin: 0 auto;
         text-align: $font-c;
-        padding: 60px 0px;
+        padding: 0px 0px;
     
         h3 {
             font-weight: $font-s;
@@ -599,12 +605,12 @@ footer {
         position: absolute;
         bottom: 0%;
         left: 0%;
-        border-width: 0 0 35vh 99.14vw;
+        border-width: 0 0 45vh 100vw;
         border-style: solid;
         border-color: transparent transparent #ffffff transparent;
     }
+  }
 }
-
 .contactar {
     width: $w-general;
     height: $h-contacto;
