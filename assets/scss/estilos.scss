@@ -254,7 +254,8 @@ footer {
 */
 
 .bodySobreMi {
-    height: 930px;
+    width: $w-general;
+    height: $h-sobre_mi-principal;
 }
 
 .sobreMiPresentacion {
@@ -264,7 +265,7 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    padding: 150px 0px;
+    padding: 130px 0px;
 
     .sobreMiPresentacion__titulo {
         width: $w-general/2;
@@ -285,7 +286,7 @@ footer {
         position: absolute;
         bottom: 0%;
         left: 0%;
-        border-width: 0 0 35vh 99vw;
+        border-width: 0 0 45vh 100vw;
         border-style: solid;
         border-color: transparent transparent #ffffff transparent;
     }
