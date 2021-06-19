@@ -1,0 +1,48 @@
+* {
+    font-size: "Fjalla One", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+  /*  
+    ==========================================================
+    =============== INICIO DE LAS MEDIAQUERIES =============== 
+    ==========================================================
+*/
+
+/* Breakpoint 1300px */
+
+@media (max-width:1280px) and (min-width: 990px) {
+
+  /* Menu de Navegación */
+
+
+  .menu__lista {
+    width: 300px;
+    height: 0px;
+    margin-left: -85px;
+    margin-bottom: 0;
+  }
+
+
+  /* INDEX */
+  .indexPresentacion__titulo h1 {
+    font-size: 4.5em;  
+  }
+
+  .indexPresentacion__titulo h3 {
+    font-size: 3.2em;
+  }
+
+  .indexAcercaDe {
+    width: 100%;
+    height: 500px;
+    margin-top: 0;
+  }
+
+  .indexGaleria {
+    width: 100%;
+    height: 800px;
+  }
+}
