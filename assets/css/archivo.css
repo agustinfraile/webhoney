@@ -8,7 +8,7 @@
   background-color: #ffffff; }
 
 .bg-header {
-  background-color: #d2b061af; }
+  background-color: #55555585; }
 
 .bg-header-texto {
   background-color: #fffdfdb6; }
@@ -213,35 +213,6 @@ footer {
   overflow: hidden;
   display: flex;
   position: relative; }
-  .indexGaleria .indexGaleria__seccionArriba {
-    z-index: 10;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    border-width: 35vh 100vw 0 0;
-    border-style: solid;
-    border-color: #ffffff transparent transparent transparent; }
-  .indexGaleria .indexGaleria__img {
-    width: 20%;
-    height: 800px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .indexGaleria .indexGaleria__img .indexGaleria__img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .indexGaleria .indexGaleria__seccionAbajo {
-    z-index: 10;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    border-width: 0 0 0vh 100vw;
-    border-style: solid;
-    border-color: transparent transparent #ffffff transparent; }
 
 /*
     ===============================================================

@@ -209,45 +209,6 @@ footer {
     display: flex;
     position: relative;
 
-
-    .indexGaleria__seccionArriba {
-        z-index: 10;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        border-width: 35vh 100vw 0 0;
-        border-style: solid;
-        border-color: #ffffff transparent transparent transparent;
-    }
-
-    .indexGaleria__img {
-        width: 20%;
-        height: $h-index;
-        overflow: hidden;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-
-        .indexGaleria__img img {
-            width: $w-general;
-            height: 100%;
-            object-fit: cover;
-        }
-
-    }
-
-    .indexGaleria__seccionAbajo {
-        z-index: 10;
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        border-width: 0 0 0vh 100vw;
-        border-style: solid;
-        border-color: transparent transparent #ffffff transparent;
-    }
 }
 
 
