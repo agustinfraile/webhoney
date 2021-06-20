@@ -23,6 +23,10 @@ header {
     align-items: center;
 
 
+    .header__full {
+        height: $h-header-full;
+    }
+
     // estilos para el logo
     .logoContainer {
         position: absolute;
@@ -132,7 +136,13 @@ footer {
 
 */
 
+.bodyIndex__Altura {
+    width: $w-general;
+    height: $h-index-full;
+
+
 .bodyIndex {
+    background-image: url(/img/index/honey-inicio.jpg);
     background-repeat: no-repeat;
 }
 
@@ -140,6 +150,8 @@ footer {
 .indexPresentacion {
     width: $w-general;
     height: $h-index;
+    margin-left: auto;
+    margin-right: auto;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -154,19 +166,9 @@ footer {
             font-weight: $font-s;
         }
     }
-    
-    .indexPresentacion__seccionAbajo {
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        border-width: 0 0 45vh 100vw;
-        border-style: solid;
-        border-color: transparent transparent #ffffff transparent;
-    }
+ }
 
 }
-
-
 
 .indexAcercaDe {
     width: $w-general;
@@ -176,7 +178,7 @@ footer {
     .indexAcercaDe__sub {
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 90%;
         text-align: $font-c;
 
         h3 {
@@ -187,8 +189,6 @@ footer {
         }
 
         img {
-            box-shadow: 4px 5px 10px 4px;
-            border-radius: 290px;
             margin-bottom: 60px;
         }
 
