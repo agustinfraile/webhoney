@@ -8,7 +8,7 @@
   background-color: #ffffff; }
 
 .bg-header {
-  background-color: #55555585; }
+  background-color: #d2b061af; }
 
 .bg-header-texto {
   background-color: #fffdfdb6; }
@@ -164,7 +164,6 @@ footer {
 
 */
 .bodyIndex {
-  background-image: url(/img/index/honey-inicio.jpg);
   background-repeat: no-repeat; }
 
 .indexPresentacion {
