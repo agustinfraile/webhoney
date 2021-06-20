@@ -265,7 +265,7 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    padding: 130px 0px;
+    padding: 100px 0px;
 
     .sobreMiPresentacion__titulo {
         width: $w-general/2;
@@ -286,7 +286,7 @@ footer {
         position: absolute;
         bottom: 0%;
         left: 0%;
-        border-width: 0 0 45vh 99vw;
+        border-width: 0 0 30vh 99vw;
         border-style: solid;
         border-color: transparent transparent #ffffff transparent;
     }

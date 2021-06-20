@@ -46,5 +46,12 @@
 
 
   /* SOBRE MI */
-  
+  .sobreMiPresentacion__titulo h1 {
+    font-size: 5.3em;
+  }
+
+  .sobreMiPresentacion__titulo h3 {
+    font-size: 2.8em;
+  }
+
 }
