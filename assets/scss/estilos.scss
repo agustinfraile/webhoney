@@ -171,7 +171,7 @@ footer {
 
 .indexAcercaDe {
     width: $w-general;
-    height: 500px;
+    height: 950px;
     margin-top: 0;
 
     .indexAcercaDe__sub {
@@ -182,9 +182,15 @@ footer {
 
         h3 {
             font-weight: $font-s;
-            margin-bottom: 20px;
+            margin-bottom: 100px;
             margin-top: 200px;
             
+        }
+
+        img {
+            box-shadow: 4px 5px 10px 4px;
+            border-radius: 290px;
+            margin-bottom: 60px;
         }
 
         p {

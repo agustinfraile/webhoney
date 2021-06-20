@@ -190,7 +190,7 @@ footer {
 
 .indexAcercaDe {
   width: 100%;
-  height: 500px;
+  height: 950px;
   margin-top: 0; }
   .indexAcercaDe .indexAcercaDe__sub {
     margin-left: auto;
@@ -199,8 +199,12 @@ footer {
     text-align: center; }
     .indexAcercaDe .indexAcercaDe__sub h3 {
       font-weight: 300;
-      margin-bottom: 20px;
+      margin-bottom: 100px;
       margin-top: 200px; }
+    .indexAcercaDe .indexAcercaDe__sub img {
+      box-shadow: 4px 5px 10px 4px;
+      border-radius: 290px;
+      margin-bottom: 60px; }
     .indexAcercaDe .indexAcercaDe__sub p {
       font-weight: 300; }
 
