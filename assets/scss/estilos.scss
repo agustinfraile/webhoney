@@ -142,6 +142,7 @@ footer {
 
 
 .bodyIndex {
+    width: $w-general;
     background-image: url(/img/index/honey-inicio.jpg);
     background-repeat: no-repeat;
 }
@@ -149,7 +150,7 @@ footer {
 
 .indexPresentacion {
     width: $w-general;
-    height: $h-index;
+    height: $h-index;   
     margin-left: auto;
     margin-right: auto;
     background-attachment: fixed;
