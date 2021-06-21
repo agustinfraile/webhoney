@@ -173,7 +173,7 @@ footer {
 
 .indexAcercaDe {
     width: $w-general;
-    height: 950px;
+    height: $h-index-sec;
     margin-top: 0;
 
     .indexAcercaDe__sub {
@@ -184,18 +184,18 @@ footer {
 
         h3 {
             font-weight: $font-s;
-            margin-bottom: 100px;
-            margin-top: 200px;
+            margin-bottom: 70px;
+            margin-top: 160px;
             
         }
 
         img {
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
 
         p {
             font-weight: $font-s;
-
+            margin-bottom: 40px;
         }
     }
 }
@@ -203,12 +203,9 @@ footer {
 
 
 
-.indexGaleria {
+.indexAcercaDeDos {
     width: $w-general;
-    height: $h-index;
-    overflow: hidden;
-    display: flex;
-    position: relative;
+    height: $h-index-sec;
 
 }
 

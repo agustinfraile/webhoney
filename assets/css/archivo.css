@@ -174,7 +174,7 @@ footer {
     background-repeat: no-repeat; }
   .bodyIndex__Altura .indexPresentacion {
     width: 100%;
-    height: 800px;
+    height: 850px;
     margin-left: auto;
     margin-right: auto;
     background-attachment: fixed;
@@ -190,7 +190,7 @@ footer {
 
 .indexAcercaDe {
   width: 100%;
-  height: 950px;
+  height: 980px;
   margin-top: 0; }
   .indexAcercaDe .indexAcercaDe__sub {
     margin-left: auto;
@@ -199,19 +199,17 @@ footer {
     text-align: center; }
     .indexAcercaDe .indexAcercaDe__sub h3 {
       font-weight: 300;
-      margin-bottom: 100px;
-      margin-top: 200px; }
+      margin-bottom: 70px;
+      margin-top: 160px; }
     .indexAcercaDe .indexAcercaDe__sub img {
-      margin-bottom: 60px; }
+      margin-bottom: 40px; }
     .indexAcercaDe .indexAcercaDe__sub p {
-      font-weight: 300; }
+      font-weight: 300;
+      margin-bottom: 40px; }
 
-.indexGaleria {
+.indexAcercaDeDos {
   width: 100%;
-  height: 800px;
-  overflow: hidden;
-  display: flex;
-  position: relative; }
+  height: 980px; }
 
 /*
     ===============================================================
