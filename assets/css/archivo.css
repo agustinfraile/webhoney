@@ -85,7 +85,7 @@
 
 header {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -101,14 +101,14 @@ header {
     header .logoContainer .logoContainer__link {
       background: url(/img/logo__final3.0.png);
       width: 100%;
-      height: 800px;
+      height: 1000px;
       background-repeat: no-repeat;
       display: inline-block;
       transition: 0.8s; }
   header .logoContainer__link:hover {
     background: url(/img/logo__final3.0_hover.png);
     width: 100%;
-    height: 800px;
+    height: 1000px;
     background-repeat: no-repeat;
     opacity: 0.8;
     transition: 0.2s; }
@@ -170,7 +170,7 @@ footer {
   height: 2950px; }
   .bodyIndex__Altura .bodyIndex {
     width: 100%;
-    height: 1200px;
+    height: 1000px;
     background-color: black; }
   .bodyIndex__Altura .indexPresentacion {
     width: 100%;
@@ -184,9 +184,38 @@ footer {
       .bodyIndex__Altura .indexPresentacion .indexPresentacion__titulo h3 {
         font-weight: 300; }
 
-.mainIndex {
+.scroll-animation {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .scroll-animation span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    transform: rotate(45deg);
+    animation: animacion 2s infinite;
+    margin: -10px; }
+  .scroll-animation span:nth-child(2) {
+    animation-delay: -0.2s; }
+  .scroll-animation span:nth-child(3) {
+    animation-delay: -0.4s; }
+
+@keyframes animacion {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px); } }
+
+#mainIndex {
   width: 100%;
-  height: 2400px;
+  height: 2200px;
   /*
     ===============================================================
     ====================== ESTILOS SOBRE MI =======================
@@ -211,88 +240,88 @@ footer {
     ===============================================================
 
 */ }
-  .mainIndex .indexAcercaDe {
+  #mainIndex .indexAcercaDe {
     width: 100%;
-    height: 1200px; }
-    .mainIndex .indexAcercaDe .indexAcercaDe__sub {
+    height: 1100px; }
+    #mainIndex .indexAcercaDe .indexAcercaDe__sub {
       margin-left: auto;
       margin-right: auto;
       width: 90%;
       text-align: center; }
-      .mainIndex .indexAcercaDe .indexAcercaDe__sub h3 {
+      #mainIndex .indexAcercaDe .indexAcercaDe__sub h3 {
         font-weight: 300;
         margin-bottom: 10px;
         margin-top: 100px; }
-      .mainIndex .indexAcercaDe .indexAcercaDe__sub .indexAcercaDe__img {
+      #mainIndex .indexAcercaDe .indexAcercaDe__sub .indexAcercaDe__img {
         margin-bottom: 40px;
         width: 100%;
         height: 600px;
         background-image: url(/img/index/imagen-index.png);
         background-position: center;
         background-repeat: no-repeat; }
-        .mainIndex .indexAcercaDe .indexAcercaDe__sub .indexAcercaDe__img p {
+        #mainIndex .indexAcercaDe .indexAcercaDe__sub .indexAcercaDe__img p {
           font-weight: 300;
           margin-bottom: 40px; }
-  .mainIndex .indexAcercaDeDos {
+  #mainIndex .indexAcercaDeDos {
     width: 100%;
-    height: 1200px; }
-    .mainIndex .indexAcercaDeDos .indexAcercaDeDos__sub {
+    height: 1100px; }
+    #mainIndex .indexAcercaDeDos .indexAcercaDeDos__sub {
       margin-left: auto;
       margin-right: auto;
       width: 90%;
       text-align: center;
       padding: 80px 0px; }
-      .mainIndex .indexAcercaDeDos .indexAcercaDeDos__sub h3 {
+      #mainIndex .indexAcercaDeDos .indexAcercaDeDos__sub h3 {
         font-weight: 300;
         margin-bottom: 10px; }
-    .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones {
+    #mainIndex .indexAcercaDeDos .indexAcercaDe__secciones {
       width: 80%;
       height: 700px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 20px;
       padding: 1px 0; }
-      .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info {
+      #mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info {
         width: 100%;
         height: 215px;
         margin-top: 15px;
         display: flex;
         border-radius: 40px;
         box-shadow: 7px 12px 12px 2px;
-        background-color: #ffffffad; }
-        .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--box {
+        background-color: #ffffffd7; }
+        #mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--box {
           width: 80%;
           height: 215px;
           padding: 70px 0; }
-          .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--box h4 {
+          #mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--box h4 {
             text-align: center; }
-          .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--box p {
+          #mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--box p {
             text-align: center; }
-        .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--icon {
+        #mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--icon {
           width: 20%;
           height: 215px; }
-          .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--icon .icon--calendario {
+          #mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--icon .icon--calendario {
             width: 100%;
             height: 200px;
             background-image: url(/img/index/iconos/calendario.png);
             background-repeat: no-repeat;
             background-position: center; }
-          .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--icon .icon--galeria {
+          #mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--icon .icon--galeria {
             width: 100%;
             height: 200px;
             background-image: url(/img/index/iconos/galeria.png);
             background-repeat: no-repeat;
             background-position: center; }
-          .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--icon .icon--buzon {
+          #mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--icon .icon--buzon {
             width: 100%;
             height: 200px;
             background-image: url(/img/index/iconos/buzon.png);
             background-repeat: no-repeat;
             background-position: center; }
-  .mainIndex .bodySobreMi {
+  #mainIndex .bodySobreMi {
     width: 100%;
     height: 937px; }
-  .mainIndex .sobreMiPresentacion {
+  #mainIndex .sobreMiPresentacion {
     cursor: default;
     width: 100%;
     height: 801px;
@@ -300,16 +329,16 @@ footer {
     flex-wrap: nowrap;
     justify-content: center;
     padding: 100px 0px; }
-    .mainIndex .sobreMiPresentacion .sobreMiPresentacion__titulo {
+    #mainIndex .sobreMiPresentacion .sobreMiPresentacion__titulo {
       width: 50%;
       height: 350px;
       background-color: #eee4cc2a;
       margin: 0 auto;
       text-align: center;
       padding: 60px 0px; }
-      .mainIndex .sobreMiPresentacion .sobreMiPresentacion__titulo h3 {
+      #mainIndex .sobreMiPresentacion .sobreMiPresentacion__titulo h3 {
         font-weight: 300; }
-    .mainIndex .sobreMiPresentacion .sobreMiPresentacion__seccionAbajo {
+    #mainIndex .sobreMiPresentacion .sobreMiPresentacion__seccionAbajo {
       width: 100%;
       position: absolute;
       bottom: 0%;
@@ -317,7 +346,7 @@ footer {
       border-width: 0 0 30vh 99vw;
       border-style: solid;
       border-color: transparent transparent #ffffff transparent; }
-  .mainIndex .sobreMiContainer {
+  #mainIndex .sobreMiContainer {
     width: 100%;
     height: 801px;
     display: flex;
@@ -325,22 +354,22 @@ footer {
     flex-direction: center;
     padding: 140px 0px;
     justify-content: space-evenly; }
-    .mainIndex .sobreMiContainer .sobreMiContainer__box {
+    #mainIndex .sobreMiContainer .sobreMiContainer__box {
       display: flex;
       width: 400px;
       height: 400px;
       box-shadow: 5px 5px 20px #000000; }
-      .mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio {
+      #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio {
         width: 100%;
         height: 100%;
         padding: 0px; }
-        .mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2019 {
+        #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2019 {
           background-image: url(/./img/mis_dias/Honey-2019.png); }
-        .mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2020 {
+        #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2020 {
           background-image: url(/./img/mis_dias/Honey-2020.png); }
-        .mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2021 {
+        #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2021 {
           background-image: url(/./img/mis_dias/Honey-2021.png); }
-        .mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a {
+        #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a {
           width: 100%;
           height: 100%;
           display: flex;
@@ -348,7 +377,7 @@ footer {
           text-decoration: none;
           transition: 0.8s;
           opacity: 0.5; }
-          .mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a p {
+          #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a p {
             padding: 30px;
             width: 100%;
             height: 100px;
@@ -356,48 +385,48 @@ footer {
             font-weight: bold;
             opacity: 0;
             transition: 0.5s; }
-        .mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a:hover {
+        #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a:hover {
           opacity: 1;
           transition: 0.9s; }
-          .mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a:hover p {
+          #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a:hover p {
             opacity: 1;
             transition: 0.8s; }
-  .mainIndex .sobreMiPresentacionNew {
+  #mainIndex .sobreMiPresentacionNew {
     width: 100%;
     height: 500px;
     padding: 8% 0;
     background-color: #f1e2bc;
     transition: 2s; }
-    .mainIndex .sobreMiPresentacionNew .sobreMiPresentacionNew__box {
+    #mainIndex .sobreMiPresentacionNew .sobreMiPresentacionNew__box {
       text-align: center; }
-  .mainIndex .sobreMiContainerNew {
+  #mainIndex .sobreMiContainerNew {
     width: 100%;
     height: 300px;
     display: flex;
     margin: 50px auto; }
-    .mainIndex .sobreMiContainerNew .sobreMiContainerNew__box {
+    #mainIndex .sobreMiContainerNew .sobreMiContainerNew__box {
       width: 50%;
       height: 300px;
       margin-left: 50px; }
-      .mainIndex .sobreMiContainerNew .sobreMiContainerNew__box p {
+      #mainIndex .sobreMiContainerNew .sobreMiContainerNew__box p {
         text-align: center;
         margin-top: 15%; }
-      .mainIndex .sobreMiContainerNew .sobreMiContainerNew__box .p_Izquierda {
+      #mainIndex .sobreMiContainerNew .sobreMiContainerNew__box .p_Izquierda {
         animation: transitionmenosX 2s; }
-      .mainIndex .sobreMiContainerNew .sobreMiContainerNew__box .p_Derecha {
+      #mainIndex .sobreMiContainerNew .sobreMiContainerNew__box .p_Derecha {
         animation: transition-menosX 2s; }
-      .mainIndex .sobreMiContainerNew .sobreMiContainerNew__box .parrafoNew2019 {
+      #mainIndex .sobreMiContainerNew .sobreMiContainerNew__box .parrafoNew2019 {
         animation: transitionmenosX 2s;
         text-align: center;
         margin-top: 11%; }
-    .mainIndex .sobreMiContainerNew picture {
+    #mainIndex .sobreMiContainerNew picture {
       margin-left: 100px; }
-      .mainIndex .sobreMiContainerNew picture img {
+      #mainIndex .sobreMiContainerNew picture img {
         border-radius: 140px;
         box-shadow: 3px 3px 10px 4px; }
-      .mainIndex .sobreMiContainerNew picture .i_Derecha {
+      #mainIndex .sobreMiContainerNew picture .i_Derecha {
         animation: transitionX 2s; }
-      .mainIndex .sobreMiContainerNew picture .i_Izquierda {
+      #mainIndex .sobreMiContainerNew picture .i_Izquierda {
         animation: transition-X 2s; }
 
 @keyframes transitionX {
@@ -431,10 +460,10 @@ footer {
   to {
     opacity: 1;
     transform: translateX(0); } }
-  .mainIndex .bodyGaleria {
+  #mainIndex .bodyGaleria {
     width: 100%;
     height: 920px; }
-    .mainIndex .bodyGaleria .galeriaPresentacion {
+    #mainIndex .bodyGaleria .galeriaPresentacion {
       cursor: default;
       width: 100%;
       height: 801px;
@@ -442,16 +471,16 @@ footer {
       flex-wrap: nowrap;
       justify-content: center;
       padding: 130px 0px; }
-      .mainIndex .bodyGaleria .galeriaPresentacion .galeriaPresentacion__titulo {
+      #mainIndex .bodyGaleria .galeriaPresentacion .galeriaPresentacion__titulo {
         width: 50%;
         height: 350px;
         background-color: #eee4cc2a;
         margin: 0 auto;
         text-align: center;
         padding: 60px 0px; }
-        .mainIndex .bodyGaleria .galeriaPresentacion .galeriaPresentacion__titulo h3 {
+        #mainIndex .bodyGaleria .galeriaPresentacion .galeriaPresentacion__titulo h3 {
           font-weight: 300; }
-      .mainIndex .bodyGaleria .galeriaPresentacion .galeriaPresentacion__seccionAbajo {
+      #mainIndex .bodyGaleria .galeriaPresentacion .galeriaPresentacion__seccionAbajo {
         width: 100%;
         position: absolute;
         bottom: 0%;
@@ -459,7 +488,7 @@ footer {
         border-width: 0 0 45vh 99vw;
         border-style: solid;
         border-color: transparent transparent #ffffff transparent; }
-  .mainIndex .galeriaImagenes {
+  #mainIndex .galeriaImagenes {
     padding: 10px 300px;
     margin: 0 auto;
     width: 100%;
@@ -467,55 +496,55 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container {
       background-color: #a39983;
       width: 600px;
       height: 600px;
       margin: 20px 15px; }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container--foto1 {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto1 {
       background-image: url(/img/galeria/foto1.jpg);
       background-position: center;
       background-size: cover; }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container--foto2 {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto2 {
       background-image: url(/img/galeria/foto2.jpg);
       background-position: center;
       background-size: cover; }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container--foto3 {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto3 {
       background-image: url(/img/galeria/foto3.jpg);
       background-position: center;
       background-size: cover; }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container--foto4 {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto4 {
       background-image: url(/img/galeria/foto4.jpg);
       background-position: center;
       background-size: cover; }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container--foto5 {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto5 {
       background-image: url(/img/galeria/foto5.jpg);
       background-position: center;
       background-size: cover; }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container--foto6 {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto6 {
       background-image: url(/img/galeria/foto6.jpg);
       background-position: center;
       background-size: cover; }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container--foto7 {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto7 {
       background-image: url(/img/galeria/foto7.jpg);
       background-position: center;
       background-size: cover; }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container--foto8 {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto8 {
       background-image: url(/img/galeria/foto8.jpg);
       background-position: center;
       background-size: cover; }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container--foto9 {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto9 {
       background-image: url(/img/galeria/foto9.jpg);
       background-position: center;
       background-size: cover; }
-    .mainIndex .galeriaImagenes .galeriaImagenes__container--foto10 {
+    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto10 {
       background-image: url(/img/galeria/foto1.jpg);
       background-position: center;
       background-size: cover; }
-  .mainIndex .bodyContacto {
+  #mainIndex .bodyContacto {
     width: 100%;
     height: 920px; }
-    .mainIndex .bodyContacto .contactoPresentacion {
+    #mainIndex .bodyContacto .contactoPresentacion {
       cursor: default;
       width: 100%;
       height: 500px;
@@ -523,16 +552,16 @@ footer {
       flex-wrap: nowrap;
       justify-content: center;
       padding: 130px 0px; }
-      .mainIndex .bodyContacto .contactoPresentacion .contactoPresentacion__titulo {
+      #mainIndex .bodyContacto .contactoPresentacion .contactoPresentacion__titulo {
         width: 50%;
         height: 350px;
         background-color: #eee4cc2a;
         margin: 0 auto;
         text-align: center;
         padding: 0px 0px; }
-        .mainIndex .bodyContacto .contactoPresentacion .contactoPresentacion__titulo h3 {
+        #mainIndex .bodyContacto .contactoPresentacion .contactoPresentacion__titulo h3 {
           font-weight: 300; }
-      .mainIndex .bodyContacto .contactoPresentacion .contactoPresentacion__seccionAbajo {
+      #mainIndex .bodyContacto .contactoPresentacion .contactoPresentacion__seccionAbajo {
         width: 100%;
         position: absolute;
         bottom: 0%;
@@ -540,12 +569,12 @@ footer {
         border-width: 0 0 45vh 99vw;
         border-style: solid;
         border-color: transparent transparent #ffffff transparent; }
-  .mainIndex .contactar {
+  #mainIndex .contactar {
     width: 100%;
     height: 900px;
     padding: 150px 0px;
     display: flex; }
-    .mainIndex .contactar .contactar__form {
+    #mainIndex .contactar .contactar__form {
       box-shadow: 3px 3px 15px #000000;
       border-radius: 100px;
       background-color: #b9b09d0c;
@@ -555,21 +584,21 @@ footer {
       height: 600px;
       margin: 0 auto;
       padding: 80px 500px; }
-      .mainIndex .contactar .contactar__form input {
+      #mainIndex .contactar .contactar__form input {
         width: 300px;
         height: 40px;
         margin-bottom: 20px; }
-      .mainIndex .contactar .contactar__form select {
+      #mainIndex .contactar .contactar__form select {
         width: 300px;
         height: 40px;
         margin-bottom: 20px; }
-      .mainIndex .contactar .contactar__form option {
+      #mainIndex .contactar .contactar__form option {
         width: 300px;
         height: 40px; }
-      .mainIndex .contactar .contactar__form textarea {
+      #mainIndex .contactar .contactar__form textarea {
         width: 500px;
         margin-left: -100px; }
-      .mainIndex .contactar .contactar__form .btn-form {
+      #mainIndex .contactar .contactar__form .btn-form {
         width: 200px;
         height: 35px;
         margin-left: 55px;
@@ -577,6 +606,6 @@ footer {
         padding: 5px 0;
         border-radius: 15px;
         transition: 0.2s; }
-      .mainIndex .contactar .contactar__form .btn-form:hover {
+      #mainIndex .contactar .contactar__form .btn-form:hover {
         opacity: 0.5;
         transition: 0.2s; }
