@@ -236,6 +236,45 @@ footer {
   .mainIndex .indexAcercaDeDos {
     width: 100%;
     height: 1200px; }
+    .mainIndex .indexAcercaDeDos .indexAcercaDeDos__sub {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      text-align: center;
+      padding: 120px 0px; }
+      .mainIndex .indexAcercaDeDos .indexAcercaDeDos__sub h3 {
+        background-color: paleturquoise;
+        font-weight: 300;
+        margin-bottom: 10px; }
+    .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones {
+      width: 80%;
+      height: 700px;
+      background-color: palegoldenrod;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      padding: 18px 0; }
+      .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info {
+        width: 100%;
+        height: 215px;
+        background-color: palevioletred;
+        margin-top: 5px;
+        display: flex; }
+        .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--box {
+          width: 80%;
+          height: 215px;
+          background-color: rebeccapurple;
+          padding: 50px 0; }
+          .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--box h4 {
+            background-color: saddlebrown;
+            text-align: center; }
+          .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--box p {
+            background-color: salmon;
+            text-align: center; }
+        .mainIndex .indexAcercaDeDos .indexAcercaDe__secciones .indexAcercaDe__secciones--info .indexAcercaDe__secciones--icon {
+          width: 20%;
+          height: 215px;
+          background-color: royalblue; }
   .mainIndex .bodySobreMi {
     width: 100%;
     height: 937px; }
