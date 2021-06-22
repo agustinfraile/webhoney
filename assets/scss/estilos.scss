@@ -143,24 +143,23 @@ footer {
 
 .bodyIndex {
     width: $w-general;
-    background-image: url(/img/index/honey-inicio.jpg);
-    background-repeat: no-repeat;
+    height: $h-index-sec;   
+    background-color: black;
+    // background-image: url(/img/index/honey-inicio.jpg);
+    // background-repeat: no-repeat;
 }
 
 
 .indexPresentacion {
     width: $w-general;
-    height: $h-index;   
     margin-left: auto;
-    margin-right: auto;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
+    margin-right: auto; 
+    height: 200px;
+
     
     .indexPresentacion__titulo {
-        margin-top: 200px;
+        width: $w-general;
+        margin-top: 300px;
         text-align: $font-c;
         
         h3 {
@@ -171,35 +170,42 @@ footer {
 
 }
 
-.indexAcercaDe {
-    width: $w-general;
-    height: $h-index-sec;
-    margin-top: 0;
+.mainIndex {
+width: $w-general;
+height: $h-index-main;
 
-    .indexAcercaDe__sub {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        text-align: $font-c;
+    .indexAcercaDe {
+        width: $w-general;
+        height: $h-index-sec;
 
-        h3 {
-            font-weight: $font-s;
-            margin-bottom: 70px;
-            margin-top: 160px;
-            
-        }
+        .indexAcercaDe__sub {
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            text-align: $font-c;
 
-        img {
-            margin-bottom: 40px;
-        }
+            h3 {
+                font-weight: $font-s;
+                margin-bottom: 10px;
+                margin-top: 100px;
+                
+            }
 
-        p {
-            font-weight: $font-s;
-            margin-bottom: 40px;
+            .indexAcercaDe__img {
+                margin-bottom: 40px;
+                width: $w-general;
+                height: 600px;
+                background-image: url(/img/index/imagen-index.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                
+            p {
+                font-weight: $font-s;
+                margin-bottom: 40px;
+            }
         }
     }
 }
-
 
 
 
@@ -673,4 +679,5 @@ footer {
             transition: 0.2s;
         }
     }
+}
 }
