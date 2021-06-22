@@ -27,6 +27,10 @@ header {
         height: $h-header-full;
     }
 
+    .header__full--section {
+        height: $h-header-sections;
+    }
+
     // estilos para el logo
     .logoContainer {
         position: absolute;
@@ -39,7 +43,7 @@ header {
         .logoContainer__link {
             background: url(/img/logo__final3.0.png);
             width: $w-general;
-            height: $h-header;
+            height: $h-header-full;
             background-repeat: no-repeat;
             display: inline-block;
             transition: 0.8s;
@@ -49,7 +53,7 @@ header {
     .logoContainer__link:hover {
         background: url(/img/logo__final3.0_hover.png);
         width: $w-general;
-        height: $h-header;
+        height: $h-header-full;
         background-repeat: no-repeat;
         opacity: 0.8;
         transition: 0.2s;
@@ -145,8 +149,6 @@ footer {
     width: $w-general;
     height: $h-header;   
     background-color: black;
-    // background-image: url(/img/index/honey-inicio.jpg);
-    // background-repeat: no-repeat;
 }
 
 

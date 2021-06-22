@@ -91,6 +91,8 @@ header {
   align-items: center; }
   header .header__full {
     height: 90px; }
+  header .header__full--section {
+    height: 600px; }
   header .logoContainer {
     position: absolute;
     height: 90px;
@@ -101,14 +103,14 @@ header {
     header .logoContainer .logoContainer__link {
       background: url(/img/logo__final3.0.png);
       width: 100%;
-      height: 1000px;
+      height: 90px;
       background-repeat: no-repeat;
       display: inline-block;
       transition: 0.8s; }
   header .logoContainer__link:hover {
     background: url(/img/logo__final3.0_hover.png);
     width: 100%;
-    height: 1000px;
+    height: 90px;
     background-repeat: no-repeat;
     opacity: 0.8;
     transition: 0.2s; }
