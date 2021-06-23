@@ -248,8 +248,8 @@ footer {
     ===============================================================
     ======================== ESTILOS 2019 =========================
     ===============================================================
-
-*/
+    
+    */
   /*
     ===============================================================
     ======================= ESTILOS GALERIA =======================
@@ -342,52 +342,55 @@ footer {
             background-position: center; }
   #mainIndex .bodySobreMi__Altura {
     width: 100%;
-    height: 2000px; }
-  #mainIndex .sobreMiContainer {
+    height: 2500px; }
+  #mainIndex #mainSobreMi {
     width: 100%;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: center;
-    padding: 140px 0px;
-    justify-content: space-evenly; }
-    #mainIndex .sobreMiContainer .sobreMiContainer__box {
-      display: flex;
-      width: 400px;
+    height: 1500px; }
+    #mainIndex #mainSobreMi .sobreMiContainer {
+      width: 100%;
       height: 400px;
-      box-shadow: 5px 5px 20px #000000; }
-      #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio {
-        width: 100%;
-        height: 100%;
-        padding: 0px; }
-        #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2019 {
-          background-image: url(/./img/mis_dias/Honey-2019.png); }
-        #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2020 {
-          background-image: url(/./img/mis_dias/Honey-2020.png); }
-        #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2021 {
-          background-image: url(/./img/mis_dias/Honey-2021.png); }
-        #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: center;
+      padding: 140px 0px;
+      justify-content: space-evenly; }
+      #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        box-shadow: 5px 5px 20px #000000; }
+        #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio {
           width: 100%;
           height: 100%;
-          display: flex;
-          padding: 140px 0;
-          text-decoration: none;
-          transition: 0.8s;
-          opacity: 0.5; }
-          #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a p {
-            padding: 30px;
+          padding: 0px; }
+          #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2019 {
+            background-image: url(/./img/mis_dias/Honey-2019.png); }
+          #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2020 {
+            background-image: url(/./img/mis_dias/Honey-2020.png); }
+          #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2021 {
+            background-image: url(/./img/mis_dias/Honey-2021.png); }
+          #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a {
             width: 100%;
-            height: 100px;
-            text-align: center;
-            font-weight: bold;
-            opacity: 0;
-            transition: 0.5s; }
-        #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a:hover {
-          opacity: 1;
-          transition: 0.9s; }
-          #mainIndex .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a:hover p {
+            height: 100%;
+            display: flex;
+            padding: 140px 0;
+            text-decoration: none;
+            transition: 0.8s;
+            opacity: 0.5; }
+            #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a p {
+              padding: 30px;
+              width: 100%;
+              height: 100px;
+              text-align: center;
+              font-weight: bold;
+              opacity: 0;
+              transition: 0.5s; }
+          #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a:hover {
             opacity: 1;
-            transition: 0.8s; }
+            transition: 0.9s; }
+            #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a:hover p {
+              opacity: 1;
+              transition: 0.8s; }
   #mainIndex .sobreMiPresentacionNew {
     width: 100%;
     height: 500px;

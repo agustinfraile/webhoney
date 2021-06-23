@@ -371,83 +371,87 @@ height: $h-index-main;
 .bodySobreMi__Altura { 
     width: $w-general;
     height: $h-sobre_mi-full;
-    
 }
 
-.sobreMiContainer {
+#mainSobreMi {
     width: $w-general;
-    height: $h-sobre_mi;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: center;
-    padding: 140px 0px;
-    justify-content: space-evenly;
-
-    .sobreMiContainer__box {
+    height: $h-sobre_mi-main;
+    
+    .sobreMiContainer {
+        width: $w-general;
+        height: $h-sobre_mi;
         display: flex;
-        width: 400px;
-        height: 400px;
-        box-shadow: 5px 5px 20px #000000;
+        flex-wrap: wrap;
+        flex-direction: center;
+        padding: 140px 0px;
+        justify-content: space-evenly;
+        
+        .sobreMiContainer__box {
+            display: flex;
+            width: 400px;
+            height: 400px;
+            box-shadow: 5px 5px 20px #000000;
+            
 
-
-        .sobreMiContainer__box--anio {
-            width: $w-general;
-            height: $h-general;
-            padding: 0px;
-
-            .sobreMiContainer__box--2019 {
-                background-image: url(/./img/mis_dias/Honey-2019.png);
-            }
-
-            .sobreMiContainer__box--2020 {
-                background-image: url(/./img/mis_dias/Honey-2020.png);
-            }
-
-            .sobreMiContainer__box--2021 {
-                background-image: url(/./img/mis_dias/Honey-2021.png);
-            }
-
-            a {
+            .sobreMiContainer__box--anio {
                 width: $w-general;
                 height: $h-general;
-                display: flex;
-                padding: 140px 0;
-                text-decoration: $sacar-subrayado;
-                transition: 0.8s;
-                opacity: 0.5;
-
-
-                p {
-                    padding: 30px;
-                    width: $w-general;
-                    height: 100px;
-                    text-align: $font-c;
-                    font-weight: $font-b;
-                    opacity: 0;
-                    transition: 0.5s;
+                padding: 0px;
+                
+                .sobreMiContainer__box--2019 {
+                    background-image: url(/./img/mis_dias/Honey-2019.png);
                 }
-
-            }
-
-            a:hover {
-                opacity: 1;
-                transition: 0.9s;
-
-                p {
-                    opacity: 1;
+                
+                .sobreMiContainer__box--2020 {
+                    background-image: url(/./img/mis_dias/Honey-2020.png);
+                }
+                
+                .sobreMiContainer__box--2021 {
+                    background-image: url(/./img/mis_dias/Honey-2021.png);
+                }
+                
+                a {
+                    width: $w-general;
+                    height: $h-general;
+                    display: flex;
+                    padding: 140px 0;
+                    text-decoration: $sacar-subrayado;
                     transition: 0.8s;
+                    opacity: 0.5;
+                    
+                    
+                    p {
+                        padding: 30px;
+                        width: $w-general;
+                        height: 100px;
+                        text-align: $font-c;
+                        font-weight: $font-b;
+                        opacity: 0;
+                        transition: 0.5s;
+                    }
+                    
+                }
+                
+                a:hover {
+                    opacity: 1;
+                    transition: 0.9s;
+                    
+                    p {
+                        opacity: 1;
+                        transition: 0.8s;
+                    }
                 }
             }
         }
     }
 }
-
-/*
+    
+    /*
     ===============================================================
     ======================== ESTILOS 2019 =========================
     ===============================================================
-
-*/
+    
+    */
 
 .sobreMiPresentacionNew {
     width: $w-general;
