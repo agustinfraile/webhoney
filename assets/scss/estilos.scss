@@ -94,11 +94,22 @@ header {
     width: $w-general;
     height: $h-header-sections;
 
-    .header__full--section {
-        height: $h-header-sections;
+    .sectionPresentacion {
+        width: $w-general;
+        margin-left: auto;
+        margin-right: auto; 
+        height: 200px;
+        
+        .sectionPresentacion__titulo {
+            width: $w-general;
+            margin-top: 300px;
+            text-align: $font-c;
+            
+            h3 {
+                font-weight: $font-s;
+            }
+        }
     }
-
-    
 }
 
 // estilos para pie de pagina
@@ -353,32 +364,10 @@ height: $h-index-main;
 
 */
 
-.bodySobreMiAltura { 
+.bodySobreMi__Altura { 
     width: $w-general;
     height: $h-sobre_mi-full;
-
-    .bodySection {
-        width: $w-general;
-        height: $h-header-sections;
-    }
-}
-
-
-.sobreMiPresentacion {
-    width: $w-general;
-    margin-left: auto;
-    margin-right: auto; 
-    height: 200px;
-
-    .sobreMiPresentacion__titulo {
-        width: $w-general;
-        margin-top: 300px;
-        text-align: $font-c;
-
-        h3 {
-            font-weight: $font-s;
-        }
-    }
+    
 }
 
 .sobreMiContainer {
