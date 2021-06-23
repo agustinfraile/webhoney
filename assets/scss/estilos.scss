@@ -93,7 +93,10 @@ header {
 #header-sections {
     width: $w-general;
     height: $h-header-sections;
-    background-image: url(/img/sobre_mi/dog-food-5168940_960_720.jpg);
+    background-image: url(/img/sobre_mi/dog--food.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .sectionPresentacion {
         width: $w-general;
