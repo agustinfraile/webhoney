@@ -155,7 +155,10 @@ footer {
     .bodyIndex {
         width: $w-general;
         height: $h-header;   
-        background-color: black;
+        background-image: url(/img/index/honey-presentacion-index.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
@@ -164,7 +167,7 @@ footer {
         margin-left: auto;
         margin-right: auto; 
         height: 200px;
-
+        
         
         .indexPresentacion__titulo {
             width: $w-general;
@@ -340,7 +343,6 @@ height: $h-index-main;
             }
         }
     }
-
 }
 
 
