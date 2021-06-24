@@ -22,56 +22,47 @@ $sacar-subrayado: none;
     display: block;
     height: 55px;
     width: 200px;
-    border-radius: 4px;
+    border-radius: 7px;
     background-color: transparent;
+    color: #ffffff;
     font-size: 18px;
     overflow: hidden;
     transition: all 500ms ease;
-    border: 2px solid #e0a81a;
-    margin-top: 20px;
-    margin-left: 100px;
-    text-align: center;
-    
-    
-    a {
-        border-radius: 30px;
-        display: inline-block;
-        height: 50px;
-        width: 200px;
-        color: #ffffff;
-        padding: 12px 0px;
-    }
-    .botones::before {
-        content: ' ';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        margin: auto;
-        background-color: #e0a81a;
-        transition: all 500ms ease;
-        z-index: -1;
-    }
+    border: 2px solid #ebc20b;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    z-index: 0;
+    font-weight: 700;
+    cursor: pointer;
 
-    .botones:hover {
-        animation: shadow-pulse 1000ms 1;
-        background-color: #e0a81a;
-        color: rgba(209, 209, 209, 0.856);
+
+    a {
+        display: inline-block;
+        width: 200px;
+        height: 55px;
+        padding: 12px 60px;
+        color: #ffffff;
     }
 
     a:hover {
-        text-decoration: $sacar-subrayado;
         color: #ffffff;
+        text-decoration: $sacar-subrayado;
     }
-}
+  }
 
-@keyframes shadow-pulse {
-    
+  .botones:hover {
+    animation: shadow-pulse 1000ms 1;
+    background-color: #ebc20b;
+    color: #434343;
+  }
+
+  @keyframes shadow-pulse {
     0% {
-        box-shadow: 0 0 0 0 0 rgba(300, 200, 100, 0.6);
+      box-shadow: 0 0 0 0 rgba(235, 212, 12, 0.6);
     }
-
     100% {
-        box-shadow: 0 0 0 0 0 rgba(300, 200, 100, 0);
+      box-shadow: 0 0 8px 16px rgba(235, 212, 12, 0);
     }
-}
+  }
