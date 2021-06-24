@@ -27,54 +27,44 @@
     </head>
 
     <body>
-        <!-- Seccion contenedora de presentacion y color -->
-        <section class="bodyContacto bg-secciones">
-            <header class="bg-header">
-                <!-- Logo del menu de navegacion -->
-                <picture class="logoContainer">
-                    
-                    <a class="logoContainer__link" href="../index.html">
-                        <img class="logoContainer__link--imagen" src="../img/logo.png" alt="Logo Honeyweb">
-                    </a>
 
-                </picture>
+        <!-- Seccion contenedora de la cabecera -->
+        <header id="header-sections">
+            <div class="bg-header header__full">
+
+                <!-- Logo del menu de navegacion -->
+                <div class="logoContainer">
+                    <a class="logoContainer__link" href="../index.html"></a>
+                </div>
 
                 <!-- Menu de navegacion -->
                 <nav class="menu">
-
                     <ul class="menu__lista">
-
                         <li class="menu__lista--boton">
-                            <a class="bg-header-texto" href="../views/sobre_mi.html">Sobre Mí</a>
-                        </li>
-                        <li class="menu__lista--boton">
-                            <a class="bg-header-texto" href="../views/galeria.html">Galería</a>
-                        </li>
-                        <li class="menu__lista--boton">
-                            <a class="bg-header-texto" href="../views/contacto.html">Contacto</a>
+                            <a class="bg-header-texto color-botones" href="../views/sobre_mi.html">Sobre Mí</a>
                         </li>
 
+                        <li class="menu__lista--boton">
+                            <a class="bg-header-texto color-botones" href="../views/galeria.html">Galería</a>
+                        </li>
+
+                        <li class="menu__lista--boton">
+                            <a class="bg-header-texto color-botones" href="../views/contacto.html">Contacto</a>
+                        </li>
                     </ul>
-
                 </nav>
-
-            </header>
-
-            <!-- Seccion de presentacion -->
-            <section class="contactoPresentacion">
-                
-                <div class="contactoPresentacion__titulo">
-                    <h1 class="font-s-titulo">Contacto</h1>
-                    <h3 class="font-s-subtitulo">Si tenes alguna duda o sugerencia, no dudes en contactarnos!</h3>
-                </div>
-                
-                <div class="contactoPresentacion__seccionAbajo">
-                    
-                </div>
-                
-            </section>
+            </div>
             
-        </section>
+            <!-- Contenido de presentacion de la seccion -->
+            <div class="sectionPresentacion">
+                
+                <div class="sectionPresentacion__titulo">
+                    <h1 class="font-s-titulo color-titulo">Contacto</h1>
+                    <h3 class="font-s-subtitulo color-subtitulo">Si tenes alguna duda o sugerencia, no dudes en contactarnos!</h3>
+                </div>
+                
+            </div>
+        </header>
 
         <main>
 
