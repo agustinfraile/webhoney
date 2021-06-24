@@ -23,7 +23,7 @@
   background-color: #f1e9d3; }
 
 .bg-sobre-mi {
-  background-color: #ffffff5b; }
+  background-color: #585858; }
 
 .bg-subtitulo-sobre_mi {
   background-color: #0000008e; }
@@ -54,25 +54,50 @@
   box-shadow: 5px 7px 13px #000000;
   border: 1px solid black; }
 
-.sobreMiContainer__box--miBoton {
+.botones {
+  position: relative;
+  display: block;
+  height: 55px;
+  width: 200px;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 18px;
+  overflow: hidden;
+  transition: all 500ms ease;
+  border: 2px solid #e0a81a;
   margin-top: 20px;
   margin-left: 100px;
-  text-align: center;
-  transition: 0.7s; }
-  .sobreMiContainer__box--miBoton a {
+  text-align: center; }
+  .botones a {
     border-radius: 30px;
     display: inline-block;
     height: 50px;
     width: 200px;
-    color: black;
-    padding: 10px 40px; }
+    color: #ffffff;
+    padding: 12px 0px; }
+  .botones .botones::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: #e0a81a;
+    transition: all 500ms ease;
+    z-index: -1; }
+  .botones .botones:hover {
+    animation: shadow-pulse 1000ms 1;
+    background-color: #e0a81a;
+    color: rgba(209, 209, 209, 0.856); }
+  .botones a:hover {
+    text-decoration: none;
+    color: #ffffff; }
 
-.sobreMiContainer__box--miBoton:hover {
-  background-color: #f1e2bc86;
-  transition: 1.2s; }
-  .sobreMiContainer__box--miBoton:hover a {
-    color: black;
-    text-decoration: none; }
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0 0 rgba(255, 200, 100, 0.6); }
+  100% {
+    box-shadow: 0 0 0 0 0 rgba(255, 200, 100, 0); } }
 
 .font-s-titulo {
   font-size: 6em; }
@@ -134,7 +159,7 @@ header {
 
 #header-sections {
   width: 100%;
-  height: 800px;
+  height: 900px;
   background-image: url(/img/sobre_mi/dog--food-min.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -237,31 +262,7 @@ footer {
 
 #mainIndex {
   width: 100%;
-  height: 2200px;
-  /*
-    ===============================================================
-    ====================== ESTILOS SOBRE MI =======================
-    ===============================================================
-
-*/
-  /*
-    ===============================================================
-    ======================== ESTILOS 2019 =========================
-    ===============================================================
-    
-    */
-  /*
-    ===============================================================
-    ======================= ESTILOS GALERIA =======================
-    ===============================================================
-
-*/
-  /*
-    ===============================================================
-    ====================== ESTILOS CONTACTO =======================
-    ===============================================================
-
-*/ }
+  height: 2200px; }
   #mainIndex .indexAcercaDe {
     width: 100%;
     height: 1100px; }
@@ -340,44 +341,58 @@ footer {
             background-image: url(/img/index/iconos/buzon.png);
             background-repeat: no-repeat;
             background-position: center; }
-  #mainIndex .bodySobreMi__Altura {
+
+/*
+    ===============================================================
+    ====================== ESTILOS SOBRE MI =======================
+    ===============================================================
+
+*/
+.bodySobreMi__Altura {
+  width: 100%;
+  height: 2200px; }
+
+#mainSobreMi {
+  width: 100%;
+  height: 1000px; }
+  #mainSobreMi .sobreMiContainer {
     width: 100%;
-    height: 2500px; }
-  #mainIndex #mainSobreMi {
-    width: 100%;
-    height: 1500px; }
-    #mainIndex #mainSobreMi .sobreMiContainer {
-      width: 100%;
-      height: 400px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: center;
-      padding: 140px 0px;
-      justify-content: space-evenly; }
-      #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box {
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: center;
+    padding: 220px 0px;
+    justify-content: space-evenly; }
+    #mainSobreMi .sobreMiContainer .sobreMiContainer__caja {
+      height: 500px; }
+      #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box {
         display: flex;
         width: 400px;
         height: 400px;
-        box-shadow: 5px 5px 20px #000000; }
-        #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio {
+        box-shadow: 5px 5px 20px #000000;
+        border-radius: 10px; }
+        #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio {
           width: 100%;
           height: 100%;
           padding: 0px; }
-          #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2019 {
+          #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2019 {
+            border-radius: 10px;
             background-image: url(/./img/mis_dias/Honey-2019.png); }
-          #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2020 {
+          #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2020 {
+            border-radius: 10px;
             background-image: url(/./img/mis_dias/Honey-2020.png); }
-          #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2021 {
+          #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2021 {
+            border-radius: 10px;
             background-image: url(/./img/mis_dias/Honey-2021.png); }
-          #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a {
+          #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio a {
             width: 100%;
             height: 100%;
             display: flex;
             padding: 140px 0;
             text-decoration: none;
             transition: 0.8s;
-            opacity: 0.5; }
-            #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a p {
+            opacity: 1; }
+            #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio a p {
               padding: 30px;
               width: 100%;
               height: 100px;
@@ -385,49 +400,57 @@ footer {
               font-weight: bold;
               opacity: 0;
               transition: 0.5s; }
-          #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a:hover {
-            opacity: 1;
+          #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio a:hover {
+            opacity: 0.7;
             transition: 0.9s; }
-            #mainIndex #mainSobreMi .sobreMiContainer .sobreMiContainer__box .sobreMiContainer__box--anio a:hover p {
+            #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio a:hover p {
               opacity: 1;
               transition: 0.8s; }
-  #mainIndex .sobreMiPresentacionNew {
-    width: 100%;
-    height: 500px;
-    padding: 8% 0;
-    background-color: #f1e2bc;
-    transition: 2s; }
-    #mainIndex .sobreMiPresentacionNew .sobreMiPresentacionNew__box {
-      text-align: center; }
-  #mainIndex .sobreMiContainerNew {
-    width: 100%;
+
+/*
+===============================================================
+======================== ESTILOS 2019 =========================
+===============================================================
+
+*/
+.sobreMiPresentacionNew {
+  width: 100%;
+  height: 500px;
+  padding: 8% 0;
+  background-color: #f1e2bc;
+  transition: 2s; }
+  .sobreMiPresentacionNew .sobreMiPresentacionNew__box {
+    text-align: center; }
+
+.sobreMiContainerNew {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin: 50px auto; }
+  .sobreMiContainerNew .sobreMiContainerNew__box {
+    width: 50%;
     height: 300px;
-    display: flex;
-    margin: 50px auto; }
-    #mainIndex .sobreMiContainerNew .sobreMiContainerNew__box {
-      width: 50%;
-      height: 300px;
-      margin-left: 50px; }
-      #mainIndex .sobreMiContainerNew .sobreMiContainerNew__box p {
-        text-align: center;
-        margin-top: 15%; }
-      #mainIndex .sobreMiContainerNew .sobreMiContainerNew__box .p_Izquierda {
-        animation: transitionmenosX 2s; }
-      #mainIndex .sobreMiContainerNew .sobreMiContainerNew__box .p_Derecha {
-        animation: transition-menosX 2s; }
-      #mainIndex .sobreMiContainerNew .sobreMiContainerNew__box .parrafoNew2019 {
-        animation: transitionmenosX 2s;
-        text-align: center;
-        margin-top: 11%; }
-    #mainIndex .sobreMiContainerNew picture {
-      margin-left: 100px; }
-      #mainIndex .sobreMiContainerNew picture img {
-        border-radius: 140px;
-        box-shadow: 3px 3px 10px 4px; }
-      #mainIndex .sobreMiContainerNew picture .i_Derecha {
-        animation: transitionX 2s; }
-      #mainIndex .sobreMiContainerNew picture .i_Izquierda {
-        animation: transition-X 2s; }
+    margin-left: 50px; }
+    .sobreMiContainerNew .sobreMiContainerNew__box p {
+      text-align: center;
+      margin-top: 15%; }
+    .sobreMiContainerNew .sobreMiContainerNew__box .p_Izquierda {
+      animation: transitionmenosX 2s; }
+    .sobreMiContainerNew .sobreMiContainerNew__box .p_Derecha {
+      animation: transition-menosX 2s; }
+    .sobreMiContainerNew .sobreMiContainerNew__box .parrafoNew2019 {
+      animation: transitionmenosX 2s;
+      text-align: center;
+      margin-top: 11%; }
+  .sobreMiContainerNew picture {
+    margin-left: 100px; }
+    .sobreMiContainerNew picture img {
+      border-radius: 140px;
+      box-shadow: 3px 3px 10px 4px; }
+    .sobreMiContainerNew picture .i_Derecha {
+      animation: transitionX 2s; }
+    .sobreMiContainerNew picture .i_Izquierda {
+      animation: transition-X 2s; }
 
 @keyframes transitionX {
   from {
@@ -460,152 +483,168 @@ footer {
   to {
     opacity: 1;
     transform: translateX(0); } }
-  #mainIndex .bodyGaleria {
+
+/*
+    ===============================================================
+    ======================= ESTILOS GALERIA =======================
+    ===============================================================
+
+*/
+.bodyGaleria {
+  width: 100%;
+  height: 920px; }
+  .bodyGaleria .galeriaPresentacion {
+    cursor: default;
     width: 100%;
-    height: 920px; }
-    #mainIndex .bodyGaleria .galeriaPresentacion {
-      cursor: default;
-      width: 100%;
-      height: 400px;
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      padding: 130px 0px; }
-      #mainIndex .bodyGaleria .galeriaPresentacion .galeriaPresentacion__titulo {
-        width: 50%;
-        height: 350px;
-        background-color: #eee4cc2a;
-        margin: 0 auto;
-        text-align: center;
-        padding: 60px 0px; }
-        #mainIndex .bodyGaleria .galeriaPresentacion .galeriaPresentacion__titulo h3 {
-          font-weight: 300; }
-      #mainIndex .bodyGaleria .galeriaPresentacion .galeriaPresentacion__seccionAbajo {
-        width: 100%;
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        border-width: 0 0 45vh 99vw;
-        border-style: solid;
-        border-color: transparent transparent #ffffff transparent; }
-  #mainIndex .galeriaImagenes {
-    padding: 10px 300px;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container {
-      background-color: #a39983;
-      width: 600px;
-      height: 600px;
-      margin: 20px 15px; }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto1 {
-      background-image: url(/img/galeria/foto1.jpg);
-      background-position: center;
-      background-size: cover; }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto2 {
-      background-image: url(/img/galeria/foto2.jpg);
-      background-position: center;
-      background-size: cover; }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto3 {
-      background-image: url(/img/galeria/foto3.jpg);
-      background-position: center;
-      background-size: cover; }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto4 {
-      background-image: url(/img/galeria/foto4.jpg);
-      background-position: center;
-      background-size: cover; }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto5 {
-      background-image: url(/img/galeria/foto5.jpg);
-      background-position: center;
-      background-size: cover; }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto6 {
-      background-image: url(/img/galeria/foto6.jpg);
-      background-position: center;
-      background-size: cover; }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto7 {
-      background-image: url(/img/galeria/foto7.jpg);
-      background-position: center;
-      background-size: cover; }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto8 {
-      background-image: url(/img/galeria/foto8.jpg);
-      background-position: center;
-      background-size: cover; }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto9 {
-      background-image: url(/img/galeria/foto9.jpg);
-      background-position: center;
-      background-size: cover; }
-    #mainIndex .galeriaImagenes .galeriaImagenes__container--foto10 {
-      background-image: url(/img/galeria/foto1.jpg);
-      background-position: center;
-      background-size: cover; }
-  #mainIndex .bodyContacto {
-    width: 100%;
-    height: 920px; }
-    #mainIndex .bodyContacto .contactoPresentacion {
-      cursor: default;
-      width: 100%;
-      height: 500px;
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      padding: 130px 0px; }
-      #mainIndex .bodyContacto .contactoPresentacion .contactoPresentacion__titulo {
-        width: 50%;
-        height: 350px;
-        background-color: #eee4cc2a;
-        margin: 0 auto;
-        text-align: center;
-        padding: 0px 0px; }
-        #mainIndex .bodyContacto .contactoPresentacion .contactoPresentacion__titulo h3 {
-          font-weight: 300; }
-      #mainIndex .bodyContacto .contactoPresentacion .contactoPresentacion__seccionAbajo {
-        width: 100%;
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        border-width: 0 0 45vh 99vw;
-        border-style: solid;
-        border-color: transparent transparent #ffffff transparent; }
-  #mainIndex .contactar {
-    width: 100%;
-    height: 900px;
-    padding: 150px 0px;
-    display: flex; }
-    #mainIndex .contactar .contactar__form {
-      box-shadow: 3px 3px 15px #000000;
-      border-radius: 100px;
-      background-color: #b9b09d0c;
-      border: 1px solid #000000;
-      display: inline-block;
-      width: 70%;
-      height: 600px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 130px 0px; }
+    .bodyGaleria .galeriaPresentacion .galeriaPresentacion__titulo {
+      width: 50%;
+      height: 350px;
+      background-color: #eee4cc2a;
       margin: 0 auto;
-      padding: 80px 500px; }
-      #mainIndex .contactar .contactar__form input {
-        width: 300px;
-        height: 40px;
-        margin-bottom: 20px; }
-      #mainIndex .contactar .contactar__form select {
-        width: 300px;
-        height: 40px;
-        margin-bottom: 20px; }
-      #mainIndex .contactar .contactar__form option {
-        width: 300px;
-        height: 40px; }
-      #mainIndex .contactar .contactar__form textarea {
-        width: 500px;
-        margin-left: -100px; }
-      #mainIndex .contactar .contactar__form .btn-form {
-        width: 200px;
-        height: 35px;
-        margin-left: 55px;
-        margin-top: 10px;
-        padding: 5px 0;
-        border-radius: 15px;
-        transition: 0.2s; }
-      #mainIndex .contactar .contactar__form .btn-form:hover {
-        opacity: 0.5;
-        transition: 0.2s; }
+      text-align: center;
+      padding: 60px 0px; }
+      .bodyGaleria .galeriaPresentacion .galeriaPresentacion__titulo h3 {
+        font-weight: 300; }
+    .bodyGaleria .galeriaPresentacion .galeriaPresentacion__seccionAbajo {
+      width: 100%;
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      border-width: 0 0 45vh 99vw;
+      border-style: solid;
+      border-color: transparent transparent #ffffff transparent; }
+
+.galeriaImagenes {
+  padding: 10px 300px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+  .galeriaImagenes .galeriaImagenes__container {
+    background-color: #a39983;
+    width: 600px;
+    height: 600px;
+    margin: 20px 15px; }
+  .galeriaImagenes .galeriaImagenes__container--foto1 {
+    background-image: url(/img/galeria/foto1.jpg);
+    background-position: center;
+    background-size: cover; }
+  .galeriaImagenes .galeriaImagenes__container--foto2 {
+    background-image: url(/img/galeria/foto2.jpg);
+    background-position: center;
+    background-size: cover; }
+  .galeriaImagenes .galeriaImagenes__container--foto3 {
+    background-image: url(/img/galeria/foto3.jpg);
+    background-position: center;
+    background-size: cover; }
+  .galeriaImagenes .galeriaImagenes__container--foto4 {
+    background-image: url(/img/galeria/foto4.jpg);
+    background-position: center;
+    background-size: cover; }
+  .galeriaImagenes .galeriaImagenes__container--foto5 {
+    background-image: url(/img/galeria/foto5.jpg);
+    background-position: center;
+    background-size: cover; }
+  .galeriaImagenes .galeriaImagenes__container--foto6 {
+    background-image: url(/img/galeria/foto6.jpg);
+    background-position: center;
+    background-size: cover; }
+  .galeriaImagenes .galeriaImagenes__container--foto7 {
+    background-image: url(/img/galeria/foto7.jpg);
+    background-position: center;
+    background-size: cover; }
+  .galeriaImagenes .galeriaImagenes__container--foto8 {
+    background-image: url(/img/galeria/foto8.jpg);
+    background-position: center;
+    background-size: cover; }
+  .galeriaImagenes .galeriaImagenes__container--foto9 {
+    background-image: url(/img/galeria/foto9.jpg);
+    background-position: center;
+    background-size: cover; }
+  .galeriaImagenes .galeriaImagenes__container--foto10 {
+    background-image: url(/img/galeria/foto1.jpg);
+    background-position: center;
+    background-size: cover; }
+
+/*
+    ===============================================================
+    ====================== ESTILOS CONTACTO =======================
+    ===============================================================
+
+*/
+.bodyContacto {
+  width: 100%;
+  height: 920px; }
+  .bodyContacto .contactoPresentacion {
+    cursor: default;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 130px 0px; }
+    .bodyContacto .contactoPresentacion .contactoPresentacion__titulo {
+      width: 50%;
+      height: 350px;
+      background-color: #eee4cc2a;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0px 0px; }
+      .bodyContacto .contactoPresentacion .contactoPresentacion__titulo h3 {
+        font-weight: 300; }
+    .bodyContacto .contactoPresentacion .contactoPresentacion__seccionAbajo {
+      width: 100%;
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      border-width: 0 0 45vh 99vw;
+      border-style: solid;
+      border-color: transparent transparent #ffffff transparent; }
+
+.contactar {
+  width: 100%;
+  height: 900px;
+  padding: 150px 0px;
+  display: flex; }
+  .contactar .contactar__form {
+    box-shadow: 3px 3px 15px #000000;
+    border-radius: 100px;
+    background-color: #b9b09d0c;
+    border: 1px solid #000000;
+    display: inline-block;
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    padding: 80px 500px; }
+    .contactar .contactar__form input {
+      width: 300px;
+      height: 40px;
+      margin-bottom: 20px; }
+    .contactar .contactar__form select {
+      width: 300px;
+      height: 40px;
+      margin-bottom: 20px; }
+    .contactar .contactar__form option {
+      width: 300px;
+      height: 40px; }
+    .contactar .contactar__form textarea {
+      width: 500px;
+      margin-left: -100px; }
+    .contactar .contactar__form .btn-form {
+      width: 200px;
+      height: 35px;
+      margin-left: 55px;
+      margin-top: 10px;
+      padding: 5px 0;
+      border-radius: 15px;
+      transition: 0.2s; }
+    .contactar .contactar__form .btn-form:hover {
+      opacity: 0.5;
+      transition: 0.2s; }
