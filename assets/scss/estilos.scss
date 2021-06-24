@@ -661,96 +661,21 @@ height: $h-index-main;
 */
 
 
-.bodyContacto {
+.bodyContacto__Altura {
     width: $w-general;
-    height: $h-contacto-principal;
+    height: $h-contacto-full;
 
-
-.contactoPresentacion {
-    cursor: default;
-    width: $w-general;
-    height: $h-contacto-sec;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding: 130px 0px;
-
-    .contactoPresentacion__titulo {
-        width: $w-general /2;
-        height: $h-titulos;
-        background-color: #eee4cc2a;
-        margin: 0 auto;
-        text-align: $font-c;
-        padding: 0px 0px;
-    
-        h3 {
-            font-weight: $font-s;
-        }
-    }                   
-
-    .contactoPresentacion__seccionAbajo {
+    #mainContacto {
         width: $w-general;
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        border-width: 0 0 45vh 99vw;
-        border-style: solid;
-        border-color: transparent transparent #ffffff transparent;
-    }
-  }
-}
-.contactar {
-    width: $w-general;
-    height: $h-contacto;
-    padding: 150px 0px;
-    display: flex;
-    
-    .contactar__form {
-        box-shadow: 3px 3px 15px #000000;
-        border-radius: 100px;
-        background-color: #b9b09d0c;
-        border: 1px solid #000000;
-        display: inline-block;
-        width: 70%;
-        height: 600px;
-        margin: 0 auto;
-        padding: 80px 500px;
+        height: $h-contacto-main;
 
-        input {
-            width: 300px;
-            height: 40px;
-            margin-bottom: 20px;
-        }
-
-        select {
-            width: 300px;
-            height: 40px;
-            margin-bottom: 20px;
-        }        
-
-        option {
-            width: 300px;
-            height: 40px;
-        }
-
-        textarea {
-            width: 500px;
-            margin-left: -100px;
-        }
-
-        .btn-form {
-            width: 200px;
-            height: 35px;
-            margin-left: 55px;
-            margin-top: 10px;
-            padding: 5px 0;
-            border-radius: 15px;
-            transition: 0.2s;
-        }
-
-        .btn-form:hover {
-            opacity: 0.5;
-            transition: 0.2s;
+        .contactar {
+            width: 90%;
+            height: $h-contacto-sec;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 250px;
+            background-color: rgba(113, 113, 192, 0.651);
         }
     }
 }

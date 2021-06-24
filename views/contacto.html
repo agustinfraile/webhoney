@@ -26,7 +26,7 @@
 
     </head>
 
-    <body>
+    <body class="bodyContacto__Altura">
 
         <!-- Seccion contenedora de la cabecera -->
         <header id="header-sections">
@@ -66,101 +66,87 @@
             </div>
         </header>
 
-        <main>
+        <!-- Cuerpo de la pagina -->
+        <main id="mainContacto">
 
             <!-- Seccion de contacto -->
             <section class="contactar bg-fondo">
-<!-- 
-                <form class="contactar__form">
 
-                    <input type="text" placeholder="Nombre" name="Nombre" required>
-
-                    <br>
-
-                    <label>Motivo de Contacto</label>
-                    <br>
-                    <select name="Motivo de consulta">
-                        <option value="Necesito información">Necesito información</option>
-                        <option value="Necesito comunicarme">Necesito comunicarme</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-
-                    <br>
-
-                    <input type="email" placeholder="Correo" name="Correo" required>
-
-                    <br>
-
-                    <textarea cols="30" rows="10" placeholder="Escriba aquí" name="Escribir_aqui"></textarea>
-
-                    <br>
-
-                    <button class="btn-form">
-                        <p>
-                            Enviar
-                        </p>
-                    </button>
-
-                </form> -->
-
-
+                <!-- Formulario de contacto -->
                 <form class="needs-validation" novalidate>
+
                     <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label for="validationCustom01">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                        <div class="valid-feedback">
-                          Looks good!
+                        <div class="col-md-12 mb-3">
+                            <label for="validationCustom01">Nombre</label>
+                            <input type="text" class="form-control" id="validationCustom01" required autocomplete="on">
+
+                            <div class="valid-feedback">
+                                Se ve bien!
+                            </div>
+
+                            <div class="invalid-feedback">
+                                Por favor ingresá un nombre
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label for="validationCustom02">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                        <div class="valid-feedback">
-                          Looks good!
+
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Apellido</label>
+                            <input type="text" class="form-control" id="validationCustom02"  required autocomplete="on">
+
+                            <div class="valid-feedback">
+                                Se ve bien!
+                            </div>
+
+                            <div class="invalid-feedback">
+                                Por favor ingresá un apellido
+                            </div>
                         </div>
-                      </div>
                     </div>
+
                     <div class="form-row">
-                      <div class="col-md-6 mb-3">
-                        <label for="validationCustom03">City</label>
-                        <input type="text" class="form-control" id="validationCustom03" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid city.
+                      <div class="col-md-12 mb-3">
+                            <label for="validationCustom03">Correo</label>
+                            <input type="email" class="form-control" id="validationCustom03" required autocomplete="email">
+
+                            <div class="valid-feedback">
+                                Muy bien!
+                            </div>
+
+                            <div class="invalid-feedback">
+                                Por favor ingresá un correo válido
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationCustom04">State</label>
-                        <select class="custom-select" id="validationCustom04" required>
-                          <option selected disabled value="">Choose...</option>
-                          <option>...</option>
-                        </select>
-                        <div class="invalid-feedback">
-                          Please select a valid state.
+
+                        <div class="col-md-3 mb-3">
+                            <label for="validationCustom04">Motivo de Contacto</label>
+
+                            <select class="custom-select" id="validationCustom04" required>
+                                <option selected disabled value="">Click para elegir</option>
+                                <option>Necesito información</option>
+                                <option>Necesito comunicarme</option>
+                                <option>Otro</option>
+                            </select>
+
+                            <div class="valid-feedback">
+                                Muy bien!
+                            </div>
+
+                            <div class="invalid-feedback">
+                                Por favor elegir el motivo
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-3 mb-3">
-                        <label for="validationCustom05">Zip</label>
-                        <input type="text" class="form-control" id="validationCustom05" required>
-                        <div class="invalid-feedback">
-                          Please provide a valid zip.
+
+                        <div class="col-md-12 mb-12">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribir aquí..." required></textarea>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="form-group">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                          Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                          You must agree before submitting.
-                        </div>
-                      </div>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
+
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+
                   </form>
-                  
 
             </section>
 

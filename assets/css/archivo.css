@@ -528,72 +528,16 @@ footer {
     ===============================================================
 
 */
-.bodyContacto {
+.bodyContacto__Altura {
   width: 100%;
-  height: 920px; }
-  .bodyContacto .contactoPresentacion {
-    cursor: default;
+  height: 1500px; }
+  .bodyContacto__Altura #mainContacto {
     width: 100%;
-    height: 500px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding: 130px 0px; }
-    .bodyContacto .contactoPresentacion .contactoPresentacion__titulo {
-      width: 50%;
-      height: 350px;
-      background-color: #eee4cc2a;
-      margin: 0 auto;
-      text-align: center;
-      padding: 0px 0px; }
-      .bodyContacto .contactoPresentacion .contactoPresentacion__titulo h3 {
-        font-weight: 300; }
-    .bodyContacto .contactoPresentacion .contactoPresentacion__seccionAbajo {
-      width: 100%;
-      position: absolute;
-      bottom: 0%;
-      left: 0%;
-      border-width: 0 0 45vh 99vw;
-      border-style: solid;
-      border-color: transparent transparent #ffffff transparent; }
-
-.contactar {
-  width: 100%;
-  height: 900px;
-  padding: 150px 0px;
-  display: flex; }
-  .contactar .contactar__form {
-    box-shadow: 3px 3px 15px #000000;
-    border-radius: 100px;
-    background-color: #b9b09d0c;
-    border: 1px solid #000000;
-    display: inline-block;
-    width: 70%;
-    height: 600px;
-    margin: 0 auto;
-    padding: 80px 500px; }
-    .contactar .contactar__form input {
-      width: 300px;
-      height: 40px;
-      margin-bottom: 20px; }
-    .contactar .contactar__form select {
-      width: 300px;
-      height: 40px;
-      margin-bottom: 20px; }
-    .contactar .contactar__form option {
-      width: 300px;
-      height: 40px; }
-    .contactar .contactar__form textarea {
-      width: 500px;
-      margin-left: -100px; }
-    .contactar .contactar__form .btn-form {
-      width: 200px;
-      height: 35px;
-      margin-left: 55px;
-      margin-top: 10px;
-      padding: 5px 0;
-      border-radius: 15px;
-      transition: 0.2s; }
-    .contactar .contactar__form .btn-form:hover {
-      opacity: 0.5;
-      transition: 0.2s; }
+    height: 1000px; }
+    .bodyContacto__Altura #mainContacto .contactar {
+      width: 90%;
+      height: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 250px;
+      background-color: rgba(113, 113, 192, 0.651); }
