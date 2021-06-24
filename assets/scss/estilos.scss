@@ -359,6 +359,7 @@ height: $h-index-main;
         }
     }
 }
+}
 
 
 /*
@@ -383,75 +384,86 @@ height: $h-index-main;
         display: flex;
         flex-wrap: wrap;
         flex-direction: center;
-        padding: 140px 0px;
+        padding: 220px 0px;
         justify-content: space-evenly;
         
-        .sobreMiContainer__box {
-            display: flex;
-            width: 400px;
-            height: 400px;
-            box-shadow: 5px 5px 20px #000000;
+        .sobreMiContainer__caja {
+            height: 500px;
             
-
-            .sobreMiContainer__box--anio {
-                width: $w-general;
-                height: $h-general;
-                padding: 0px;
+            .sobreMiContainer__box {
+                display: flex;
+                width: 400px;
+                height: 400px;
+                box-shadow: 5px 5px 20px #000000;
+                border-radius: 10px;
                 
-                .sobreMiContainer__box--2019 {
-                    background-image: url(/./img/mis_dias/Honey-2019.png);
-                }
                 
-                .sobreMiContainer__box--2020 {
-                    background-image: url(/./img/mis_dias/Honey-2020.png);
-                }
-                
-                .sobreMiContainer__box--2021 {
-                    background-image: url(/./img/mis_dias/Honey-2021.png);
-                }
-                
-                a {
+                .sobreMiContainer__box--anio {
                     width: $w-general;
                     height: $h-general;
-                    display: flex;
-                    padding: 140px 0;
-                    text-decoration: $sacar-subrayado;
-                    transition: 0.8s;
-                    opacity: 0.5;
+                    padding: 0px;
                     
-                    
-                    p {
-                        padding: 30px;
-                        width: $w-general;
-                        height: 100px;
-                        text-align: $font-c;
-                        font-weight: $font-b;
-                        opacity: 0;
-                        transition: 0.5s;
+                    .sobreMiContainer__box--2019 {
+                        border-radius: 10px;
+                        background-image: url(/./img/mis_dias/Honey-2019.png);
                     }
                     
-                }
-                
-                a:hover {
-                    opacity: 1;
-                    transition: 0.9s;
+                    .sobreMiContainer__box--2020 {
+                        border-radius: 10px;
+                        background-image: url(/./img/mis_dias/Honey-2020.png);
+                    }
                     
-                    p {
-                        opacity: 1;
+                    .sobreMiContainer__box--2021 {
+                        border-radius: 10px;
+                        background-image: url(/./img/mis_dias/Honey-2021.png);
+                    }
+                    
+                    a {
+                        width: $w-general;
+                        height: $h-general;
+                        display: flex;
+                        padding: 140px 0;
+                        text-decoration: $sacar-subrayado;
                         transition: 0.8s;
+                        opacity: 1;
+                        
+                        
+                        p {
+                            padding: 30px;
+                            width: $w-general;
+                            height: 100px;
+                            text-align: $font-c;
+                            font-weight: $font-b;
+                            opacity: 0;
+                            transition: 0.5s;
+                        }
+                        
+                    }
+                    
+                    a:hover {
+                        opacity: 0.7;
+                        transition: 0.9s;
+                        
+                        p {
+                            opacity: 1;
+                            transition: 0.8s;
+                        }
                     }
                 }
             }
         }
+        
     }
 }
     
-    /*
-    ===============================================================
-    ======================== ESTILOS 2019 =========================
-    ===============================================================
     
-    */
+    
+/*
+===============================================================
+======================== ESTILOS 2019 =========================
+===============================================================
+
+*/
 
 .sobreMiPresentacionNew {
     width: $w-general;
@@ -578,120 +590,66 @@ height: $h-index-main;
     ===============================================================
 
 */
-
-.bodyGaleria {
+.bodyGaleria__Altura {
     width: $w-general;
-    height: $h-galeria-principal;
+    height: $h-galeria-full;
 
-.galeriaPresentacion {
-    cursor: default;
-    width: $w-general;
-    height: $h-sobre_mi;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding: 130px 0px;
-
-    .galeriaPresentacion__titulo {
-        width: $w-general/2;
-        height: $h-titulos;
-        background-color: #eee4cc2a;
-        margin: 0 auto;
-        text-align: $font-c;
-        padding: 60px 0px;
-    
-        h3 {
-            font-weight: $font-s;
-        }
-    
-    }
-
-    .galeriaPresentacion__seccionAbajo {
+    #mainGaleria{
         width: $w-general;
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        border-width: 0 0 45vh 99vw;
-        border-style: solid;
-        border-color: transparent transparent #ffffff transparent;
-    }
- }
-}
+        height: $h-galeria-main;
+        
 
-.galeriaImagenes {
-    padding: 10px 300px;
-    margin: 0 auto;
-    width: $w-general;
-    height: $h-galeria;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    
-    .galeriaImagenes__container {
-        background-color: #a39983;
-        width: 600px;
-        height: 600px;
-        margin: 20px 15px;
-    }
+        
+        .galeriaImagenes {
+            margin: 0 auto;
+            width: $w-general;
+            height: $h-galeria;
+            
+        }
 
-    .galeriaImagenes__container--foto1 {
-        background-image: url(/img/galeria/foto1.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .galeriaImagenes__container--foto2 {
-        background-image: url(/img/galeria/foto2.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .galeriaImagenes__container--foto3 {
-        background-image: url(/img/galeria/foto3.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .galeriaImagenes__container--foto4 {
-        background-image: url(/img/galeria/foto4.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .galeriaImagenes__container--foto5 {
-        background-image: url(/img/galeria/foto5.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .galeriaImagenes__container--foto6 {
-        background-image: url(/img/galeria/foto6.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .galeriaImagenes__container--foto7 {
-        background-image: url(/img/galeria/foto7.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .galeriaImagenes__container--foto8 {
-        background-image: url(/img/galeria/foto8.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .galeriaImagenes__container--foto9 {
-        background-image: url(/img/galeria/foto9.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    .galeriaImagenes__container--foto10 {
-        background-image: url(/img/galeria/foto1.jpg);
-        background-position: center;
-        background-size: cover;
+        #demo {
+            height:100%;
+            position:relative;
+            overflow:hidden;
+          }
+          
+          
+          .green{
+            background-color:#6fb936;
+          }
+                  .thumb{
+                      margin-bottom: 30px;
+                  }
+                  
+                  .page-top{
+                      margin-top:85px;
+                  }
+          
+             
+          img.zoom {
+              width: 100%;
+              height: 200px;
+              border-radius:5px;
+              object-fit:cover;
+          }
+                  
+           
+          .transition {
+              -webkit-transform: scale(1.2); 
+              -moz-transform: scale(1.2);
+              -o-transform: scale(1.2);
+              transform: scale(1.2);
+          }
+              .modal-header {
+             
+               border-bottom: none;
+          }
+              .modal-title {
+                  color:#000;
+              }
+              .modal-footer{
+                display:none;  
+              }
     }
 }
 
@@ -795,5 +753,4 @@ height: $h-index-main;
             transition: 0.2s;
         }
     }
-}
 }

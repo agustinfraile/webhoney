@@ -14,29 +14,55 @@ $sacar-subrayado: none;
     border: 1px solid black;
 }
 
+
+
 //boton para sobre mi
-.sobreMiContainer__box--miBoton{
-    margin-top: 20px;
-    margin-left: 100px;
-    text-align: center;
-    transition: 0.7s;
+.botones {
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 200px;
+    border-radius: 7px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border: 2px solid #ebc20b;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    z-index: 0;
+    font-weight: 700;
+    cursor: pointer;
+
 
     a {
-        border-radius: 30px;
         display: inline-block;
-        height: 50px;
         width: 200px;
-        color: black;
-        padding: 10px 40px;
+        height: 55px;
+        padding: 12px 60px;
+        color: #ffffff;
     }
-}
 
-.sobreMiContainer__box--miBoton:hover {
-    background-color: #f1e2bc86;
-    transition: 1.2s;
-
-    a{
-        color: black;
+    a:hover {
+        color: #ffffff;
         text-decoration: $sacar-subrayado;
     }
-}
+  }
+
+  .botones:hover {
+    animation: shadow-pulse 1000ms 1;
+    background-color: #ebc20b;
+    color: #434343;
+  }
+
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(235, 212, 12, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 8px 16px rgba(235, 212, 12, 0);
+    }
+  }
