@@ -668,14 +668,23 @@ height: $h-index-main;
     #mainContacto {
         width: $w-general;
         height: $h-contacto-main;
+        padding: 240px 0px;
 
         .contactar {
             width: 90%;
             height: $h-contacto-sec;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 250px;
-            background-color: rgba(113, 113, 192, 0.651);
+            display: flex;
+            justify-content: center;
+            background-color: #0000005b;
+
+            .formulario {
+                color: #ffffff;
+
+                .form-box {
+                    margin: 20px auto;
+                    width: 60%;
+                }
+            }
         }
     }
 }

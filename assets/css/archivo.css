@@ -80,7 +80,7 @@
     padding: 12px 60px;
     color: #ffffff; }
   .botones a:hover {
-    color: #ffffff;
+    color: #434343;
     text-decoration: none; }
 
 .botones:hover {
@@ -533,11 +533,16 @@ footer {
   height: 1500px; }
   .bodyContacto__Altura #mainContacto {
     width: 100%;
-    height: 1000px; }
+    height: 1000px;
+    padding: 240px 0px; }
     .bodyContacto__Altura #mainContacto .contactar {
       width: 90%;
-      height: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 250px;
-      background-color: rgba(113, 113, 192, 0.651); }
+      height: 620px;
+      display: flex;
+      justify-content: center;
+      background-color: #0000005b; }
+      .bodyContacto__Altura #mainContacto .contactar .formulario {
+        color: #ffffff; }
+        .bodyContacto__Altura #mainContacto .contactar .formulario .form-box {
+          margin: 20px auto;
+          width: 60%; }
