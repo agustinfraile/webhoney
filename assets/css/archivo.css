@@ -487,10 +487,10 @@ footer {
 */
 .bodyGaleria__Altura {
   width: 100%;
-  height: 2600px; }
+  height: auto; }
   .bodyGaleria__Altura #mainGaleria {
     width: 100%;
-    height: 2000px; }
+    height: auto; }
     .bodyGaleria__Altura #mainGaleria .galeriaImagenes {
       margin: 0 auto;
       width: 100%;
