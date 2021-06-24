@@ -14,7 +14,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="/assets/css/archivo.css">
-        <link rel="stylesheet" href="/assets/css/estilos.css">
+        <!-- <link rel="stylesheet" href="/assets/css/estilos.css"> -->
 
         <!-- CSS Bootstrap v4.6 -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -22,52 +22,45 @@
     </head>
 
     <body>
-        <section class="bodyGaleria bg-secciones">
-            <header class="bg-header">
-                <!-- Logo del menu de navegacion -->
-                <picture class="logoContainer">
+
+                <!-- Seccion contenedora de la cabecera -->
+                <header id="header-sections">
+                    <div class="bg-header header__full">
+        
+                        <!-- Logo del menu de navegacion -->
+                        <div class="logoContainer">
+                            <a class="logoContainer__link" href="../index.html"></a>
+                        </div>
+        
+                        <!-- Menu de navegacion -->
+                        <nav class="menu">
+                            <ul class="menu__lista">
+                                <li class="menu__lista--boton">
+                                    <a class="bg-header-texto color-botones" href="../views/sobre_mi.html">Sobre Mí</a>
+                                </li>
+        
+                                <li class="menu__lista--boton">
+                                    <a class="bg-header-texto color-botones" href="../views/galeria.html">Galería</a>
+                                </li>
+        
+                                <li class="menu__lista--boton">
+                                    <a class="bg-header-texto color-botones" href="../views/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                     
-                    <a class="logoContainer__link" href="../index.html">
-                        <img class="logoContainer__link--imagen" src="../img/logo.png" alt="Logo Honeyweb">
-                    </a>
-
-                </picture>
-
-                <!-- Menu de navegacion -->
-                <nav class="menu">
-
-                    <ul class="menu__lista">
-
-                        <li class="menu__lista--boton">
-                            <a class="bg-header-texto" href="../views/sobre_mi.html">Sobre Mí</a>
-                        </li>
-                        <li class="menu__lista--boton">
-                            <a class="bg-header-texto" href="../views/galeria.html">Galería</a>
-                        </li>
-                        <li class="menu__lista--boton">
-                            <a class="bg-header-texto" href="../views/contacto.html">Contacto</a>
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-            </header>
-
-
-            
-            <!-- Seccion de presentacion -->
-            <section class="galeriaPresentacion">
-                <div class="galeriaPresentacion__titulo">
-                    <h1 class="font-s-titulo">Galería</h1>
-                    <h3 class="font-s-subtitulo">Te muestro algunas fotos que me sacaron</h3>
-                </div>
-                
-                <div class="galeriaPresentacion__seccionAbajo">
-                    
-                </div> 
-            </section>
-        </section>
+                    <!-- Contenido de presentacion de la seccion -->
+                    <div class="sectionPresentacion">
+                        
+                        <div class="sectionPresentacion__titulo">
+                            <h1 class="font-s-titulo color-titulo">Galería</h1>
+                            <h3 class="font-s-subtitulo color-subtitulo">Te muestro algunas fotos que me sacaron
+                            </h3>
+                        </div>
+                        
+                    </div>
+                </header>
         
         <main>
         <!-- Seccion de galeria -->
