@@ -21,6 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow-x: hidden;
 
 
     .header__full {
@@ -105,6 +106,55 @@ header {
         height: 200px;
         
         .sectionPresentacion__titulo {
+            width: $w-general;
+            margin-top: 200px;
+            text-align: $font-c;
+            
+            h3 {
+                font-weight: $font-s;
+            }
+        }
+    }
+}
+
+
+// estilos para el header de las subsecciones
+#header__subSections {
+    width: $w-general;
+    height: $h-header-sections;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .header__subSections--video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $w-general;
+        height: $h-header-sections;
+        overflow: hidden;
+    }
+
+    .header__full {
+        position: relative;
+        height: $h-header-full;
+    }
+
+    .menu {
+        position: absolute;
+        display: inline-block;
+        margin-left: 78%;
+        margin-top: 20px;
+    }
+
+    .subSectionPresentacion {
+        position: absolute;
+        width: $w-general;
+        margin-left: auto;
+        margin-right: auto; 
+        height: 200px;
+        
+        .subSectionPresentacion__titulo {
             width: $w-general;
             margin-top: 200px;
             text-align: $font-c;

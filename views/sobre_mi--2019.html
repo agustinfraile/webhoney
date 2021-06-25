@@ -15,7 +15,7 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="/assets/css/archivo.css">
-        <link rel="stylesheet" href="/assets/css/estilos.css">
+        <!-- <link rel="stylesheet" href="/assets/css/estilos.css"> -->
 
 
         <!-- FONTS -->
@@ -29,81 +29,60 @@
 
     <body class="bg-fondo">
 
-        <header class="bg-header">
-            <!-- Logo del menu de navegacion -->
-            <picture class="logoContainer">
+        <!-- Seccion contenedora de la cabecera -->
+        <header id="header__subSections">
+            <div class="header__subSections--video">
+                <video src="/img/video.mp4" autoplay loop></video>
+            </div>
+            
+            <div class="bg-header header__full">
                 
-                <a class="logoContainer__link" href="../index.html">
-                    <img class="logoContainer__link--imagen" src="../img/logo.png" alt="Logo Honeyweb">
-                </a>
-
-            </picture>
-
-            <!-- Menu de navegacion -->
-            <nav class="menu">
-
-                <ul class="menu__lista">
-
-                    <li class="menu__lista--boton">
-                        <a class="bg-header-texto color-botones" href="../views/sobre_mi.html">Sobre Mí</a>
-                    </li>
-                    <li class="menu__lista--boton">
-                        <a class="bg-header-texto color-botones" href="../views/galeria.html">Galería</a>
-                    </li>
-                    <li class="menu__lista--boton">
-                        <a class="bg-header-texto color-botones" href="../views/contacto.html">Contacto</a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
+                <!-- Logo del menu de navegacion -->
+                <div class="logoContainer">
+                    <a class="logoContainer__link" href="../index.html"></a>
+                </div>
+                
+                <!-- Menu de navegacion -->
+                <nav class="menu">
+                    <ul class="menu__lista">
+                        <li class="menu__lista--boton">
+                            <a class="bg-header-texto color-botones" href="../views/sobre_mi.html">Sobre Mí</a>
+                        </li>
+                        
+                        <li class="menu__lista--boton">
+                            <a class="bg-header-texto color-botones" href="../views/galeria.html">Galería</a>
+                        </li>
+                        
+                        <li class="menu__lista--boton">
+                            <a class="bg-header-texto color-botones" href="../views/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Contenido de presentacion de la seccion -->
+            <div class="subSectionPresentacion">
+                
+                <div class="subSectionPresentacion__titulo">
+                    <h1 class="font-s-titulo color-titulo">2019</h1>
+                    <h3 class="font-s-subtitulo color-subtitulo">Te muestro lo que fue este año para mí</h3>
+                </div>
+                
+            </div>
         </header>
         
-        <!-- Seccion de inicio -->
-
-        <section class="sobreMiPresentacionNew">
-            <div class="sobreMiPresentacionNew__box">
-                <h1 class="font-s-titulo">Esto fué mi 2019</h1>
-            </div>
-        </section>
         
+        <!-- Comienzo del contenido de la pagina -->
         <section class="sobreMiContainerNew">
-            <div class="sobreMiContainerNew__box">
-                <p class="font-s-parrafo p_Izquierda">
-                    Una de mis primeras fotos en mi nuevo hogar.
-                </p>
-            </div>
-
-
-            <picture>
-                <img class="i_Derecha" src="../img/2019/2019-1.JPG" alt="Imagen de Honey">
-            </picture>
+            
         </section>
 
         <section class="sobreMiContainerNew">
-            <picture>
-                <img class="i_Izquierda" src="../img/2019/2019-2.jpg" alt="Imagen de Honey acostada">
-            </picture>
-
-            <div class="sobreMiContainerNew__box">
-                <p class="font-s-parrafo p_Derecha">
-                    Mi primera cucha, armada con diferentes cosas que habia en la casa.
-                </p>
-            </div>
+            
         </section>
 
         <section class="sobreMiContainerNew">
-            <div class="sobreMiContainerNew__box">
-                <p class="font-s-parrafo parrafoNew2019 p_Izquierda">
-                    Y esta es la foto de la primera salida a pasear. Me hicieron esperar mucho porque tenia que completar todas mis vacunas!
-                </p>
-            </div>
-
-
-            <picture>
-                <img class="i_Derecha" src="../img/2019/2019-5.JPG" alt="Imagen de Honey paseando">
-            </picture>
+            
         </section>
 
          <!-- Pie de pagina -->
