@@ -522,71 +522,56 @@ height: $h-index-main;
     margin: 0px auto;
     background-color: rebeccapurple;
     
-    .sobreMiContainerNew__container {
-        width: 90%;
-        height: 400px;
+    .contenedor {
         margin: 0 auto;
-        background: red;
+        height: auto;
+        background-color: yellowgreen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-        .sobreMiContainerNew__container--box {
-            background: yellow;
+        .timeline{
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+            color: #ffffff;
+
+            ul{
+                list-style: $sacar-puntos;
+
+                li{
+                    padding: 20px;
+                    background-color: #101010;
+                    border-radius: 10px;
+                    margin-bottom: 20px;   
+                }
+
+                li:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .timeline-content {
+            
+            h1 {
+                font-size: 25px;
+                font-weight: 500;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 30px;
+                font-weight: 300;
+            }
         }
     }
+
 }
     
-
-// Efectos de movimiento para las imagenes y los textos al recargar la pagina
-// @keyframes transitionX {
-//     from {
-//         opacity: 0;
-//         transform: translateX(100px);
-//     }
-
-//     to {
-//         opacity: 1;
-//         transform: translateX(0);
-//     }
-// }
-
-// @keyframes transition-X {
-//     from {
-//         opacity: 0;
-//         transform: translateX(-100px);
-//     }
-
-//     to {
-//         opacity: 1;
-//         transform: translateX(0);
-//     }
-// }
-
-// @keyframes transitionmenosX {
-//     from {
-//         opacity: 0;
-//         transform: translateX(-100px);
-//     }
-
-//     to {
-//         opacity: 1;
-//         transform: translateX(0);
-//     }
-// }
-
-// @keyframes transition-menosX {
-//     from {
-//         opacity: 0;
-//         transform: translateX(100px);
-//     }
-
-//     to {
-//         opacity: 1;
-//         transform: translateX(0);
-//     }
-// }
-
-
-
-
 
 
 
