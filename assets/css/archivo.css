@@ -23,7 +23,7 @@
   background-color: #f1e9d3; }
 
 .bg-sobre-mi {
-  background-color: #585858; }
+  background-color: #3d3d3d; }
 
 .bg-subtitulo-sobre_mi {
   background-color: #0000008e; }
@@ -447,12 +447,12 @@ footer {
   width: 100%;
   height: 1000px;
   display: flex;
-  margin: 0px auto;
-  background-color: rebeccapurple; }
+  margin: 0px auto; }
   .sobreMiContainerNew .contenedor {
     margin: 0 auto;
+    width: 70%;
     height: auto;
-    background-color: yellowgreen;
+    padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -467,10 +467,14 @@ footer {
         .sobreMiContainerNew .contenedor .timeline ul li {
           padding: 20px;
           background-color: #101010;
-          border-radius: 10px;
           margin-bottom: 20px; }
         .sobreMiContainerNew .contenedor .timeline ul li:last-child {
           margin-bottom: 0; }
+    .sobreMiContainerNew .contenedor .timeline-content h2 {
+      font-size: 13px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      letter-spacing: 2px; }
     .sobreMiContainerNew .contenedor .timeline-content h1 {
       font-size: 25px;
       font-weight: 500;

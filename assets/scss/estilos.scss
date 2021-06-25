@@ -520,12 +520,12 @@ height: $h-index-main;
     height: $h-2019-section;
     display: flex;
     margin: 0px auto;
-    background-color: rebeccapurple;
     
     .contenedor {
         margin: 0 auto;
+        width: 70%;
         height: auto;
-        background-color: yellowgreen;
+        padding: 100px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -536,14 +536,14 @@ height: $h-index-main;
             margin: 0 auto;
             position: relative;
             color: #ffffff;
-
+            
+            
             ul{
                 list-style: $sacar-puntos;
-
+                
                 li{
                     padding: 20px;
                     background-color: #101010;
-                    border-radius: 10px;
                     margin-bottom: 20px;   
                 }
 
@@ -555,6 +555,13 @@ height: $h-index-main;
 
         .timeline-content {
             
+            h2 {
+                font-size: 13px;
+                font-weight: 300;
+                margin-bottom: 10px;
+                letter-spacing: 2px;
+            }
+
             h1 {
                 font-size: 25px;
                 font-weight: 500;
