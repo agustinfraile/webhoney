@@ -14,18 +14,50 @@
 /* Breakpoint 1300px */
 @media (max-width:1300px) and (min-width: 990px) {
  
-  /* INDEX */
+  /* MENU GENERAL */
   header .menu {
     margin-left: 69%;
   }
 
+  
+  #header__subSections .header__full .menu{
+    margin-left: 69%;
+  }
 
-  /* ESTILOS GENERALES SECCIONES */
+  /* SOBRE MI */
+  .bodySobreMi__Altura {
+    height: auto; 
+  }
 
+  #mainSobreMi {
+    height: auto; 
+  }     
+
+  #mainSobreMi .sobreMiContainer {
+    height: auto;
+  } 
 
 
   
 }
+
+
+/* Breakpoint 990px */
+@media (max-width:990px) and (min-width: 720px) {
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
 /*  
     ==========================================================
     ============== SUBSECCIONES 2019-2020-2021 =============== 
