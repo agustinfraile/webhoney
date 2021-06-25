@@ -11,9 +11,21 @@
     ==========================================================
 */
 
+/* Breakpoint 1300px */
+@media (max-width:1300px) and (min-width: 990px) {
+ 
+  /* INDEX */
+  header .menu {
+    margin-left: 69%;
+  }
+
+
+  /* ESTILOS GENERALES SECCIONES */
 
 
 
+  
+}
 /*  
     ==========================================================
     ============== SUBSECCIONES 2019-2020-2021 =============== 
