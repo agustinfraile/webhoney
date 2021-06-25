@@ -29,82 +29,65 @@
 
     <body class="bg-fondo">
 
-        <header class="bg-header">
-            <!-- Logo del menu de navegacion -->
-            <picture class="logoContainer">
+<!-- Seccion contenedora de la cabecera -->
+<header id="header__subSections">
+    <div class="header__subSections--video">
+        <video src="/img/video.mp4" autoplay loop></video>
+    </div>
+    
+    <div class="bg-header header__full">
+        
+        <!-- Logo del menu de navegacion -->
+        <div class="logoContainer">
+            <a class="logoContainer__link" href="../index.html"></a>
+        </div>
+        
+        <!-- Menu de navegacion -->
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__lista--boton">
+                    <a class="bg-header-texto color-botones" href="../views/sobre_mi.html">Sobre Mí</a>
+                </li>
                 
-                <a class="logoContainer__link" href="../index.html">
-                    <img class="logoContainer__link--imagen" src="../img/logo.png" alt="Logo Honeyweb">
-                </a>
-
-            </picture>
-
-            <!-- Menu de navegacion -->
-            <nav class="menu">
-
-                <ul class="menu__lista">
-
-                    <li class="menu__lista--boton">
-                        <a class="bg-header-texto color-botones" href="../views/sobre_mi.html">Sobre Mí</a>
-                    </li>
-                    <li class="menu__lista--boton">
-                        <a class="bg-header-texto color-botones" href="../views/galeria.html">Galería</a>
-                    </li>
-                    <li class="menu__lista--boton">
-                        <a class="bg-header-texto color-botones" href="../views/contacto.html">Contacto</a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-        </header>
+                <li class="menu__lista--boton">
+                    <a class="bg-header-texto color-botones" href="../views/galeria.html">Galería</a>
+                </li>
+                
+                <li class="menu__lista--boton">
+                    <a class="bg-header-texto color-botones" href="../views/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Contenido de presentacion de la seccion -->
+    <div class="subSectionPresentacion">
         
-        <!-- Seccion de inicio -->
-
-        <section class="sobreMiPresentacionNew">
-            <div class="sobreMiPresentacionNew__box">
-                <h1 class="font-s-titulo">Esto fué mi 2020</h1>
-            </div>
-        </section>
+        <div class="subSectionPresentacion__titulo">
+            <h1 class="font-s-titulo color-titulo">2020</h1>
+            <h3 class="font-s-subtitulo color-subtitulo">Te muestro lo que fue este año para mí</h3>
+        </div>
         
-        <section class="sobreMiContainerNew">
-            <div class="sobreMiContainerNew__box">
-                <p class="font-s-parrafo p_Izquierda">
-                    Bancando los estudios!
-                </p>
-            </div>
+    </div>
+</header>
 
 
-            <picture>
-                <img class="i_Derecha" src="../img/2020/2020-1.png" alt="Imagen de Honey con hojas">
-            </picture>
-        </section>
+<!-- Comienzo del contenido de la pagina -->
+<section class="sobreMiContainerNew container-fluid">
+    <div class="row sobreMiContainerNew__container">
+        <div class="col-4 sobreMiContainerNew__container--box">
+            <p>BOX1</p>
+        </div>
 
-        <section class="sobreMiContainerNew">            
-            <picture>
-                <img class="i_Izquierda" src="../img/2020/2020-2.png" alt="Imagen de Honey con su amigo Cucu">
-            </picture>
+        <div class="col-4 sobreMiContainerNew__container--box">
+            <p>BOX2</p>
+        </div>
 
-            <div class="sobreMiContainerNew__box">
-                <p class="font-s-parrafo p_Derecha">
-                    Conoci a mi nuevo amigo Cucú.
-                </p>
-            </div>
-        </section>
-
-        <section class="sobreMiContainerNew">
-            <div class="sobreMiContainerNew__box">
-                <p class="font-s-parrafo parrafoNew2019 p_Izquierda">
-                    Modo cuarentena
-                </p>
-            </div>
-
-
-            <picture>
-                <img class="i_Derecha" src="../img/2020/2020-3.png" alt="Imagen de Honey durmiendo">
-            </picture>
-        </section>
+        <div class="col-4 sobreMiContainerNew__container--box">
+            <p>BOX3</p>
+        </div>
+    </div>
+</section>
 
          <!-- Pie de pagina -->
         <footer class="bg-footer">
