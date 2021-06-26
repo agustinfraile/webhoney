@@ -338,6 +338,256 @@
 
 }
 
+/* Breackpoint 480px */
+@media (max-width:480px) and (min-width: 320px) {
+
+  /* MENU GENERAL */
+  header {
+    width: 100%;
+    height: auto;
+    background-color: #55555585;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  header .header__full {
+    height: auto;
+  }
+
+  header .logoContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header .menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 0%;
+    margin-top: 20px; 
+  }
+
+  header .menu__lista .menu__lista--boton {
+    display: flex; 
+    justify-content: center;
+  }
+
+  header .menu__lista .menu__lista--boton a {
+    text-decoration: none;
+    width: 200px;
+    display: block;
+    text-align: center;
+    transition: 0.4s; 
+  }
+  
+  header .menu__lista .menu__lista--boton a:hover {
+    background-color: #e0c990ad;
+    padding: 2rem 0rem;
+    border-radius: 3px;
+    transition: 0.6s; 
+  }
+
+
+  /* MENU DE SUBSECCIONES */
+  #header__subSections {
+    height: 1000px;
+  }
+
+  #header__subSections .header__subSections--video {
+    height: 1000px;
+  }
+
+  #header__subSections .header__full{
+    width: 100%;
+    height: 300px;
+  }
+
+  #header__subSections .menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #header__subSections .menu__lista .menu__lista--boton {
+    display: flex; 
+    justify-content: center;
+  }
+
+
+
+  /* INDEX */
+
+  .bodyIndex__Altura {
+    width: 100%;
+    height: auto; 
+  }
+  
+  .bodyIndex__Altura .bodyIndex {
+    width: 100%;
+    height: 1200px;
+  }
+
+  .bodyIndex__Altura .indexPresentacion .indexPresentacion__titulo {
+    margin-top: 150px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bodyIndex__Altura .indexPresentacion__titulo h1 {
+    font-size: 4.6em;
+  }
+
+  .bodyIndex__Altura .indexPresentacion__titulo h3 {
+    font-size: 1.8em;
+  }
+
+  .scroll-animation {
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  #mainIndex {
+    height: auto;
+  }  
+    
+  .indexAcercaDe {
+    height: auto;
+  }
+  
+  .indexAcercaDe h3 {
+    margin-bottom: 0px;
+    margin-top: 90px;   
+  }
+
+  .indexAcercaDe__img {
+      margin-bottom: 10px;
+      height: 600px;
+      width: 100%;
+      background-image: url(/img/index/imagen-index.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+          
+  .indexAcercaDe p {
+    font-size: 1.2em;
+  } 
+
+  #mainIndex .indexAcercaDe__secciones--icon .icon--calendario {
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/index/iconos/calendario.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+  }
+
+  #mainIndex .indexAcercaDe__secciones--icon .icon--galeria {
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/index/iconos/galeria.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+  }
+
+  #mainIndex .indexAcercaDe__secciones--icon .icon--buzon {
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/index/iconos/buzon.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+  }
+
+  /* ESTILOS GENERALES SECCIONES */
+
+  #header-sections .sectionPresentacion {
+    width: 80%; 
+  }
+
+  #header-sections .sectionPresentacion__titulo h1 {
+    font-size: 4.6em; 
+  }
+
+  #header-sections .sectionPresentacion__titulo h3 {
+    font-size: 1.8em; 
+  }
+
+  
+  /* ESTILOS GENERALES DE SUBSECCIONES */
+  #header__subSections .subSectionPresentacion {
+    left: 5%;
+    width: 90%;
+    margin-top: 35px;
+  }
+  
+  #header__subSections .subSectionPresentacion .subSectionPresentacion__titulo h1 {
+    font-size: 5.2em; 
+  }
+  
+  #header__subSections .subSectionPresentacion .subSectionPresentacion__titulo h3 {
+    font-size: 2.4em;
+  }
+
+  .sobreMiContainerNew {
+    padding: 150px 0px;
+    height: auto;
+  }
+  
+  /* SOBRE MI */
+  .bodySobreMi__Altura {
+    height: auto; 
+  }
+
+  #mainSobreMi {
+    height: auto; 
+  }     
+
+  #mainSobreMi .sobreMiContainer {
+    height: auto;
+  }   
+
+  #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box {
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+  #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2019 {
+    border-radius: 10px;
+    background-image: url(/./img/mis_dias/Honey-2019.png); 
+    background-size: contain;
+  }
+  
+  #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2020 {
+    border-radius: 10px;
+    background-image: url(/./img/mis_dias/Honey-2020.png); 
+    background-size: contain;
+  }
+
+  #mainSobreMi .sobreMiContainer .sobreMiContainer__caja .sobreMiContainer__box .sobreMiContainer__box--anio .sobreMiContainer__box--2021 {
+    border-radius: 10px;
+    background-image: url(/./img/mis_dias/Honey-2021.png); 
+    background-size: contain;
+  }
+
+}
+
 
 
 
