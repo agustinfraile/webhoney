@@ -11,7 +11,7 @@
     ==========================================================
 */
 
-/* Breakpoint 1300px */
+/* Breakpoint 990px */
 @media (max-width:1300px) and (min-width: 990px) {
  
   /* MENU GENERAL */
@@ -19,7 +19,7 @@
     margin-left: 69%;
   }
 
-  
+
   #header__subSections .header__full .menu{
     margin-left: 69%;
   }
@@ -36,25 +36,308 @@
   #mainSobreMi .sobreMiContainer {
     height: auto;
   } 
-
-
-  
 }
 
 
-/* Breakpoint 990px */
+/* Breakpoint 720px */
 @media (max-width:990px) and (min-width: 720px) {
 
 
+  /* MENU GENERAL */
+  header .menu {
+    margin-left: 58%;
+  }
+
+  
+  #header__subSections .header__full .menu{
+    margin-left: 58%;
+  }
+
+  /* INDEX */
+
+  .scroll-animation {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  #mainIndex {
+    height: auto;
+  }  
+   
+  .indexAcercaDe {
+    height: auto;
+  }
+  
+  .indexAcercaDe h3 {
+    margin-bottom: 10px;
+    margin-top: 100px;   
+  }
+
+  .indexAcercaDe__img {
+    margin-bottom: 40px;
+      height: 600px;
+      background-image: url(/img/index/imagen-index.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+          
+  .indexAcercaDe p {
+    font-size: 1.6em;
+  } 
+  
+
+  /* ESTILOS GENERALES SECCIONES */
+
+  #header-sections .sectionPresentacion {
+    width: 90%; 
+  }
+
+  #header-sections .sectionPresentacion__titulo h1 {
+    font-size: 5.6em; 
+  }
+
+  #header-sections .sectionPresentacion__titulo h3 {
+    font-size: 3.2em; 
+  }
 
 
 
+  /* ESTILOS GENERALES SUBSECCIONES */
+  
+  #header__subSections .subSectionPresentacion {
+    left: 5%;
+    width: 90%;
+  }
+
+  #header__subSections .subSectionPresentacion .subSectionPresentacion__titulo h1 {
+    font-size: 5.6em; 
+  }
+
+  #header__subSections .subSectionPresentacion .subSectionPresentacion__titulo h3 {
+    font-size: 3.2em;
+  }
+
+  .sobreMiContainerNew {
+    padding: 150px 0px;
+    height: auto;
+  }
+
+  /* SOBRE MI */
+  .bodySobreMi__Altura {
+    height: auto; 
+  }
+
+  #mainSobreMi {
+    height: auto; 
+  }     
+
+  #mainSobreMi .sobreMiContainer {
+    height: auto;
+  }   
+}
+
+
+/* Breackpoint 480px */
+@media (max-width:720px) and (min-width: 480px) {
+
+  /* MENU GENERAL */
+  header {
+    width: 100%;
+    height: auto;
+    background-color: #55555585;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  header .header__full {
+    height: auto;
+  }
+
+  header .logoContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header .menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 0%;
+    margin-top: 20px; 
+  }
+
+  header .menu__lista .menu__lista--boton {
+    display: flex; 
+    justify-content: center;
+  }
+
+  header .menu__lista .menu__lista--boton a {
+    text-decoration: none;
+    width: 200px;
+    display: block;
+    text-align: center;
+    transition: 0.4s; 
+  }
+  
+  header .menu__lista .menu__lista--boton a:hover {
+    background-color: #e0c990ad;
+    padding: 2rem 0rem;
+    border-radius: 3px;
+    transition: 0.6s; 
+  }
+
+
+  /* MENU DE SUBSECCIONES */
+  #header__subSections {
+    height: 1000px;
+  }
+
+  #header__subSections .header__subSections--video {
+    height: 1000px;
+  }
+
+  #header__subSections .header__full{
+    width: 100%;
+    height: 300px;
+  }
+
+  #header__subSections .menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #header__subSections .menu__lista .menu__lista--boton {
+    display: flex; 
+    justify-content: center;
+  }
 
 
 
+  /* INDEX */
 
+  .bodyIndex__Altura {
+    width: 100%;
+    height: auto; 
+  }
+  
+  .bodyIndex__Altura .bodyIndex {
+    width: 100%;
+    height: 1200px;
+  }
+
+  .bodyIndex__Altura .indexPresentacion .indexPresentacion__titulo {
+    margin-top: 350px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bodyIndex__Altura .indexPresentacion__titulo h1 {
+    font-size: 5.2em;
+  }
+
+  .bodyIndex__Altura .indexPresentacion__titulo h3 {
+    font-size: 2.4em;
+  }
+
+  .scroll-animation {
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  #mainIndex {
+    height: auto;
+  }  
+    
+  .indexAcercaDe {
+    height: auto;
+  }
+  
+  .indexAcercaDe h3 {
+    margin-bottom: 10px;
+    margin-top: 100px;   
+  }
+
+  .indexAcercaDe__img {
+    margin-bottom: 40px;
+      height: 600px;
+      background-image: url(/img/index/imagen-index.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+          
+  .indexAcercaDe p {
+    font-size: 1.4em;
+  } 
+
+  /* ESTILOS GENERALES SECCIONES */
+
+  #header-sections .sectionPresentacion {
+    width: 90%; 
+  }
+
+  #header-sections .sectionPresentacion__titulo h1 {
+    font-size: 5.2em; 
+  }
+
+  #header-sections .sectionPresentacion__titulo h3 {
+    font-size: 2.4em; 
+  }
+
+  
+  /* ESTILOS GENERALES DE SUBSECCIONES */
+  #header__subSections .subSectionPresentacion {
+    left: 5%;
+    width: 90%;
+    margin-top: 35px;
+  }
+  
+  #header__subSections .subSectionPresentacion .subSectionPresentacion__titulo h1 {
+    font-size: 5.2em; 
+  }
+  
+  #header__subSections .subSectionPresentacion .subSectionPresentacion__titulo h3 {
+    font-size: 2.4em;
+  }
+
+  .sobreMiContainerNew {
+    padding: 150px 0px;
+    height: auto;
+  }
+  
+  /* SOBRE MI */
+  .bodySobreMi__Altura {
+    height: auto; 
+  }
+
+  #mainSobreMi {
+    height: auto; 
+  }     
+
+  #mainSobreMi .sobreMiContainer {
+    height: auto;
+  }   
 
 }
+
 
 
 
